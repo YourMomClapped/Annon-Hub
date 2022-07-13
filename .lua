@@ -1,3 +1,5 @@
+local Player = game.Players.LocalPlayer
+if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon", HidePremium = false, IntroText = "Annon's HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
@@ -6,7 +8,6 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 	})
-
 -- Values
 _G.autoClicker = true
 _G.autoRebirth = true
@@ -177,17 +178,8 @@ Other:AddButton({
   	end    
 })
 
--- random
-local Random = Window:MakeTab({
-	Name = "Random indeed",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = Random:AddSection({
-	Name = "Really Random Haha"
-})
-
 
  
 
 OrionLib:Init()
+end
