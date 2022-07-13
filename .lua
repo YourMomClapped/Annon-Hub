@@ -47,7 +47,7 @@ Main:AddButton({
 if game.PlaceId == 4632363497 then
   -- Prison Life --
 
-	local Prison = Window:MakeTab({
+local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
