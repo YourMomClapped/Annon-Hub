@@ -43,17 +43,34 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Chat-Spoofer/main/.Main"))()
   	end    
 })
-if game.PlaceId == 155615604 then
+if game.PlaceId == 4632363497 then
   -- Prison Life --
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
- 
-	
-	
-	
-	
-	
-	
+	local Section = Prison:AddSection({
+	Name = "Prison Life Scripts"
+})
+	-- Prison Life Gun Spawner --
+	Prison:AddButton({
+	Name = "GunSpawner",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/PrisonLifee/main/main.lua"))()
+  	end    
+})
+	-- Prison Life Admin --
+	Tab:AddButton({
+	Name = "Prison life Admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Prison-Life-Admin/main/.Main"))()
+  	end    
+})
+end
+  -- Other --
+local Tab = Window:MakeTab({
+	Name = "Other",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
