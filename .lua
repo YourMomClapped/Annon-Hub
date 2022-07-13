@@ -36,7 +36,8 @@ Main:AddButton({
 local Section = Main:AddSection({
 	Name = "Chat Spoofer"
 })
-  -- Chat Spoofer -
+
+-- Chat Spoofer -
 Main:AddButton({
 	Name = "Chat Spoofer",
 	Callback = function()
@@ -45,7 +46,8 @@ Main:AddButton({
 })
 if game.PlaceId == 4632363497 then
   -- Prison Life --
-local Prison = Window:MakeTab({
+
+	local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -68,9 +70,21 @@ local Prison = Window:MakeTab({
   	end    
 })
 end
-  -- Other --
-local Tab = Window:MakeTab({
+
+-- Other --
+local Other = Window:MakeTab({
 	Name = "Other",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+local Section = Other:AddSection({
+	Name = "Random Scripts"
+})
+
+  -- Scriptblox.com --
+Other:AddButton({
+	Name = "Scriptblox.com HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
+  	end    
 })
