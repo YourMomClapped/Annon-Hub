@@ -177,6 +177,15 @@ Other:AddButton({
   	end    
 })
 
+-- random
+local Random = Window:MakeTab({
+	Name = "Random indeed",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Random = Tab:AddSection({
+	Name = "Randomly"
+})
 
 
 
