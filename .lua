@@ -7,6 +7,19 @@ OrionLib:MakeNotification({
 	Time = 5
 	})
 
+-- Values
+
+
+
+
+
+--Functions
+
+
+
+
+
+
 
 -- Main --
 local Main = Window:MakeTab({
@@ -33,9 +46,6 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
   	end    
 })
-local Section = Main:AddSection({
-	Name = "Chat Spoofer"
-})
 
 -- Chat Spoofer -
 Main:AddButton({
@@ -44,7 +54,20 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Chat-Spoofer/main/.Main"))()
   	end    
 })
-if game.PlaceId == 4632363497 then
+local Section = Main:AddSection({
+	Name = "Remote Spy"
+})
+
+--Remote Spy
+Main:AddButton({
+	Name = "Remote Spy",
+	Callback = function()
+      		loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+  	end    
+})
+
+
+if game.PlaceId == 155615604 then
   -- Prison Life --
 
 local Prison = Window:MakeTab({
