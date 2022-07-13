@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "For Me", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Annon", HidePremium = false, IntroText = "Annon's HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Script Annon Made",
 	Content = "This script is for me and me only",
@@ -8,13 +8,37 @@ OrionLib:MakeNotification({
 	})
 
 -- Values
+_G.autoClicker = true
+_G.autoRebirth = true
+_G.autoEgg = true
 
 
 
 
 
---Functions
+-- Functions Auto Clicker
+function autoClicker()
+while _G.autoClicker == true do
+   game:GetService("ReplicatedStorage").Events.Click3:FireServer()
+   wait(.00000000000000000000000000000000000000000000000000000000000000001)
+end
+end
 
+-- Function Auto Rebirth
+function autoRebirth()
+while _G.autoRebirth == true do
+   game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(40)
+   wait(.000000000000000001)
+end
+end
+
+-- Function Egg Hatch
+function autoEgg()
+while _G.autoEgg == true do
+   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
+   wait(.0000000000000000000000001)
+end
+end
 
 
 
@@ -110,4 +134,45 @@ Other:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
+})
+
+-- Simulators
+local Sim = Window:MakeTab({
+	Name = "Simulators",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Rebirth Champions X
+local Section = Sim:AddSection({
+	Name = "Rebirth Champions X"
+})
+-- Clicks
+Sim:AddToggle({
+	Name = "AutoClicker",
+	Default = false,
+	Callback = function(Value)
+		_G.autoClicker = Value
+		autoClicker()
+	end    
+})
+
+-- Rebirths
+Sim:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+		_G.autoRebirth = Value
+		autoRebirth()
+	end    
+})
+
+-- Egg hatching
+Sim:AddToggle({
+	Name = "Auto Hatch Kraken",
+	Default = false,
+	Callback = function(Value)
+		_G.autoEgg = Value
+		autoEgg()
+	end    
 })
