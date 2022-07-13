@@ -63,7 +63,7 @@ local Prison = Window:MakeTab({
   	end    
 })
 	-- Prison Life Admin --
-	Tab:AddButton({
+	Prison:AddButton({
 	Name = "Prison life Admin",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Prison-Life-Admin/main/.Main"))()
