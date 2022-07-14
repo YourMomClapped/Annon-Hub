@@ -4,7 +4,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Annon HUB", HidePremium = true, IntroText = "Annon HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Script Annon Made",
-	Content = "This script is for me and me only",
+	Content = "A script Hub i made reandomly for no reason, only i have access for now.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 	})
