@@ -201,9 +201,8 @@ local HUB = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-	
 -- Rebirth Champions X HUB
-	local Section = HUB:AddSection({
+    local Section = HUB:AddSection({
 	Name = "Rebirth Champions X HUB"
 })
 	HUB:AddButton({
@@ -212,8 +211,8 @@ local HUB = Window:MakeTab({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
   	end    
 })
-	
-	
-	
+
+
+
 OrionLib:Init()
 end
