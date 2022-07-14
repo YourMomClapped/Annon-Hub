@@ -179,6 +179,17 @@ Sim:AddToggle({
 		autoHatch()
 	end    
 })
+-- OTHER SIMULATOR SCRIPTS
+	local Section = SIm:AddSection({
+	Name = "More here"
+})
+	Sim:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
+	Sim:AddButton({
+	Name = "Hub For Simulators",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+  	end    
+})
 	
 -- Other --
 local Other = Window:MakeTab({
