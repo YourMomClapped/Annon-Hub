@@ -223,17 +223,6 @@ local HUB = Window:MakeTab({
   	end    
 })
 	
--- Aztub Hub
-	local Section = HUB:AddSection({
-	Name = "Aztub Hub"
-})
-	HUB:AddButton({
-	Name = "Aztub Hub",
-	Callback = function()
-      		getgenv().scriptKey,getgenv().websiteKey='7df7048e-bb44-4b44-b3d3-92dec74e2df1','5d1de10c-1c92-4d89-93d1-d2ea79b5af63';loadstring(game:HttpGet('https://aztupscripts.xyz/api/v1/whitelist/getLoader?websiteScriptKey=5d1de10c-1c92-4d89-93d1-d2ea79b5af63'))()
-  	end    
-})
-	
 
 
 
