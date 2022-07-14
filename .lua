@@ -1,7 +1,5 @@
-local Player = game.Players.LocalPlayer
-if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon HUB", HidePremium = false, IntroText = "Annon HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Annon HUB", HidePremium = true, IntroText = "Annon HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Script Annon Made",
 	Content = "This script is for me and me only",
@@ -61,6 +59,7 @@ local Main = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Main:AddParagraph("Main","Mostly Universial scripts")
 local MainSection = Main:AddSection({
 	Name = "Main"
 })
@@ -109,6 +108,7 @@ local Prison = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder one day i need to find better FE admin commands")
 	local Section = Prison:AddSection({
 	Name = "Prison Life Scripts"
 })
@@ -134,6 +134,7 @@ local Sim = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Sim:AddParagraph("Simulator Scripts","This is mostly for testing purposes")
 
 -- Rebirth Champions X
 local Section = Sim:AddSection({
@@ -183,6 +184,7 @@ local Other = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
 local Section = Other:AddSection({
 	Name = "Random Scripts"
 })
@@ -201,6 +203,7 @@ local HUB = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 -- Rebirth Champions X HUB
     local Section = HUB:AddSection({
 	Name = "Rebirth Champions X HUB"
@@ -222,9 +225,15 @@ local HUB = Window:MakeTab({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
   	end    
 })
-	
+
+-- Info
+local Info = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
 
 
 
 OrionLib:Init()
-end
