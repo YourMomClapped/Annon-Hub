@@ -211,6 +211,18 @@ local HUB = Window:MakeTab({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
   	end    
 })
+	
+-- Owl Hub
+	local Section = HUB:AddSection({
+	Name = "Owl Hub"
+})
+	HUB:AddButton({
+	Name = "Owl Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+	
 
 
 
