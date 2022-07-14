@@ -3,10 +3,10 @@ if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon HUB", HidePremium = true, IntroText = "Annon HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
-	Name = "Script Annon Made",
-	Content = "A script Hub i made reandomly for no reason, only i have access for now.",
+	Name = "Annon Hub",
+	Content = "A script hub i created out of bordem, only i have access at the momment.",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 10
 	})
 -- Values
 _G.autoClicker = true -- Tapping Legends X
