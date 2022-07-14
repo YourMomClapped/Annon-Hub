@@ -12,7 +12,7 @@ OrionLib:MakeNotification({
 _G.autoClicker = true
 _G.autoRebirth = true
 _G.autoEgg = true
-_G.autoHatch = True
+_G.autoHatch = true
 
 
 
@@ -175,15 +175,15 @@ Sim:AddToggle({
 	Callback = function(Value)
 		_G.autoEgg = Value
 		autoEgg()
-	end    
-	Tab:AddToggle({
+	end  
+})
+	Sim:AddToggle({
 	Name = "AutoHatch",
 	Default = false,
 	Callback = function(Value)
 		_G.autoHatch = Value
 		autoHatch()
 	end    
-})
 })
 
 -- Other --
