@@ -228,6 +228,17 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
   	end    
 })
 
+-- Candy Simulator
+local Section = Tab:AddSection({
+	Name = "Candy Simulator Hub"
+})
+HUB:AddButton({
+	Name = "Candy Simulator",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Candy-Simulator/main/.lua"))()
+  	end    
+})
+
 -- Info
 local Info = Window:MakeTab({
 	Name = "Information",
