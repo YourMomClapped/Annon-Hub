@@ -12,6 +12,7 @@ OrionLib:MakeNotification({
 _G.autoClicker = true
 _G.autoRebirth = true
 _G.autoEgg = true
+_G.autoHatch = True
 
 
 
@@ -38,6 +39,14 @@ function autoEgg()
 while _G.autoEgg == true do
    game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
    wait(.0000000000000000000000001)
+end
+end
+	
+-- Function Egg hatch (better egg)
+function autoHatch()
+while _G.autoHatch == true do
+   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("SpaceLab","Triple")
+   wait(.000000000000000000000001)
 end
 end
 
@@ -167,6 +176,14 @@ Sim:AddToggle({
 		_G.autoEgg = Value
 		autoEgg()
 	end    
+	Tab:AddToggle({
+	Name = "AutoHatch",
+	Default = false,
+	Callback = function(Value)
+		_G.autoHatch = Value
+		autoHatch()
+	end    
+})
 })
 
 -- Other --
