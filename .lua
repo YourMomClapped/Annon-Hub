@@ -9,15 +9,15 @@ OrionLib:MakeNotification({
 	Time = 5
 	})
 -- Values
-_G.autoClicker = true
-_G.autoRebirth = true
-_G.autoEgg = true
-_G.autoHatch = true
+_G.autoClicker = true -- Tapping Legends X
+_G.autoRebirth = true -- Tapping Legends X
+_G.autoEgg = true -- Tapping Legends X
+_G.autoHatch = true -- Tapping Legends X
 
 
 
 
-
+--Tapping Legends X
 -- Functions Auto Clicker
 function autoClicker()
 while _G.autoClicker == true do
@@ -34,7 +34,7 @@ while _G.autoRebirth == true do
 end
 end
 
--- Function Egg Hatch
+-- Function Egg Hatch 
 function autoEgg()
 while _G.autoEgg == true do
    game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
@@ -49,7 +49,7 @@ while _G.autoHatch == true do
    wait(.000000000000000000000001)
 end
 end
-
+--
 
 
 
