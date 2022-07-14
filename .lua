@@ -180,7 +180,7 @@ Sim:AddToggle({
 	end    
 })
 -- OTHER SIMULATOR SCRIPTS
-	local Section = SIm:AddSection({
+	local Section = Sim:AddSection({
 	Name = "More here"
 })
 	Sim:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
