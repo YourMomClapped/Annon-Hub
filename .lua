@@ -177,6 +177,14 @@ Other:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
+	local Random = Window:MakeTab({
+	Name = "Very random",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	local Section = Random:AddSection({
+	Name = "Super Random"
+})
 
 
  
