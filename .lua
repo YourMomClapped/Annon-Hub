@@ -201,7 +201,7 @@ Other:AddButton({
 
 -- SCRIPT HUBS
 local HUB = Window:MakeTab({
-	Name = "SCRIPT HUBS",
+	Name = "Script Hubs",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
