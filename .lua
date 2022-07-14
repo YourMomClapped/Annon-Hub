@@ -170,21 +170,14 @@ local Section = Other:AddSection({
 	Name = "Random Scripts"
 })
 
-  -- Scriptblox.com --
+  -- OTHER Scriptblox.com --
 Other:AddButton({
 	Name = "Scriptblox.com HUB",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
-	local Random = Window:MakeTab({
-	Name = "Very random",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-	local Section = Random:AddSection({
-	Name = "Super Random"
-})
+
 
 
  
