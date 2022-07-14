@@ -130,6 +130,15 @@ local Sim = Window:MakeTab({
 local Section = Sim:AddSection({
 	Name = "Rebirth Champions X"
 })
+	
+-- Rebirth Champions X HUB
+	Sim:AddButton({
+	Name = "RCX HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
+  	end    
+})
+	
 -- Clicks
 Sim:AddToggle({
 	Name = "AutoClicker",
