@@ -229,7 +229,7 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 })
 
 -- Candy Simulator
-local Section = Tab:AddSection({
+local Section = HUB:AddSection({
 	Name = "Candy Simulator Hub"
 })
 HUB:AddButton({
