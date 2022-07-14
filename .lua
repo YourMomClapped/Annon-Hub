@@ -140,14 +140,6 @@ local Section = Sim:AddSection({
 	Name = "Rebirth Champions X"
 })
 	
--- Rebirth Champions X HUB
-	Sim:AddButton({
-	Name = "RCX HUB",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
-  	end    
-})
-	
 -- Clicks
 Sim:AddToggle({
 	Name = "AutoClicker",
@@ -157,7 +149,6 @@ Sim:AddToggle({
 		autoClicker()
 	end    
 })
-
 -- Rebirth Champions X Rebirths
 Sim:AddToggle({
 	Name = "Auto Rebirth",
@@ -185,7 +176,7 @@ Sim:AddToggle({
 		autoHatch()
 	end    
 })
-
+	
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -204,5 +195,25 @@ Other:AddButton({
   	end    
 })
 
+-- SCRIPT HUBS
+local HUB = Window:MakeTab({
+	Name = "SCRIPT HUBS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	
+-- Rebirth Champions X HUB
+	local Section = HUB:AddSection({
+	Name = "Rebirth Champions X HUB"
+})
+	HUB:AddButton({
+	Name = "RCX HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
+  	end    
+})
+	
+	
+	
 OrionLib:Init()
 end
