@@ -190,6 +190,18 @@ Sim:AddToggle({
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
   	end    
 })
+	Sim:AddButton({
+	Name = "Simple Simulator Hub",
+	Callback = function()
+		OrionLib:MakeNotification({
+	Name = "Injected",
+	Content = "Welcome to Simple HUB",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+  	end    
+})
 	
 -- Other --
 local Other = Window:MakeTab({
