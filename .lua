@@ -73,6 +73,13 @@ Main:AddButton({
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
   	end    
 })
+	-- CMD X MAIN SCRIPT
+	Loser:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+  	end    
+})
 
   -- Silent Aim --
 Main:AddButton({
@@ -293,3 +300,6 @@ Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to
 
 OrionLib:Init()
 end
+else
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/White-List/main/.lua"))()
+     end
