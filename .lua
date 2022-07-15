@@ -179,30 +179,7 @@ Sim:AddToggle({
 		autoHatch()
 	end    
 })
--- OTHER SIMULATOR SCRIPTS
-	local Section = Sim:AddSection({
-	Name = "More here"
-})
-	Sim:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
-	Sim:AddButton({
-	Name = "Simulator Hub",
-	Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
-  	end    
-})
-	Sim:AddButton({
-	Name = "Simple Simulator Hub",
-	Callback = function()
-		OrionLib:MakeNotification({
-	Name = "Attached script",
-	Content = "Welcome to Simple Hub",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
-  	end    
-})
-	
+
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -255,10 +232,52 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 local Section = HUB:AddSection({
 	Name = "Candy Simulator Hub"
 })
-HUB:AddButton({
-	Name = "Candy Simulator",
+
+	
+	
+	
+	
+	
+	-- OTHER SIMULATOR SCRIPTS
+	local Section = HUB:AddSection({
+	Name = "More here"
+})
+	HUB:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
+	HUB:AddButton({
+	Name = "Simulator Hub",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Candy-Simulator/main/.lua"))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+  	end    
+})
+	HUB:AddButton({
+	Name = "Simple Simulator Hub",
+	Callback = function()
+		OrionLib:MakeNotification({
+	Name = "Attached script",
+	Content = "Welcome to Simple Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+  	end    
+})
+	
+-- Other --
+local Other = Window:MakeTab({
+	Name = "Other",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
+local Section = Other:AddSection({
+	Name = "Random Scripts"
+})
+
+  -- OTHER Scriptblox.com --
+Other:AddButton({
+	Name = "Scriptblox.com HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
 
