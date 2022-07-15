@@ -1,5 +1,5 @@
 local Player = game.Players.LocalPlayer
-if player.UserId == 1201621667 then
+if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false})
 OrionLib:MakeNotification({
@@ -13,10 +13,6 @@ _G.autoClicker = true -- Tapping Legends X
 _G.autoRebirth = true -- Tapping Legends X
 _G.autoEgg = true -- Tapping Legends X
 _G.autoHatch = true -- Tapping Legends X
-
-
-
-
 --Tapping Legends X
 -- Functions Auto Clicker
 function autoClicker()
@@ -25,7 +21,6 @@ while _G.autoClicker == true do
    wait(.00000000000000000000000000000000000000000000000000000000000000001)
 end
 end
-
 -- Function Auto Rebirth
 function autoRebirth()
 while _G.autoRebirth == true do
@@ -33,7 +28,6 @@ while _G.autoRebirth == true do
    wait(.000000000000000001)
 end
 end
-
 -- Function Egg Hatch 
 function autoEgg()
 while _G.autoEgg == true do
@@ -50,11 +44,6 @@ while _G.autoHatch == true do
 end
 end
 --
-
-
-
-
-
 -- Main --
 local Main = Window:MakeTab({
 	Name = "Main",
@@ -65,7 +54,6 @@ Main:AddParagraph("Main","Mostly Universial scripts")
 local MainSection = Main:AddSection({
 	Name = "Main"
 })
-
   -- Infinite Yield --
 Main:AddButton({
 	Name = "Infinite Yield",
@@ -80,7 +68,6 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
   	end    
 })
-
   -- Silent Aim --
 Main:AddButton({
 	Name = "Universial",
@@ -88,7 +75,6 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
   	end    
 })
-
 -- Chat Spoofer -
 Main:AddButton({
 	Name = "Chat Spoofer",
@@ -99,7 +85,6 @@ Main:AddButton({
 local Section = Main:AddSection({
 	Name = "Remote Spy"
 })
-
 --Remote Spy
 Main:AddButton({
 	Name = "Remote Spy",
@@ -107,11 +92,8 @@ Main:AddButton({
       		loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
-
-
 if game.PlaceId == 155615604 then
   -- Prison Life --
-
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
@@ -136,7 +118,6 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
   	end    
 })
 end
-
 -- Simulators
 local Sim = Window:MakeTab({
 	Name = "Simulators",
@@ -144,7 +125,6 @@ local Sim = Window:MakeTab({
 	PremiumOnly = false
 })
 Sim:AddParagraph("Simulator Scripts","This is mostly for testing purposes")
-
 -- Rebirth Champions X
 local Section = Sim:AddSection({
 	Name = "Rebirth Champions X"
@@ -168,7 +148,6 @@ Sim:AddToggle({
 		autoRebirth()
 	end    
 })
-
 -- Rebirth Champions X Egg hatching
 Sim:AddToggle({
 	Name = "Auto Hatch Kraken",
@@ -186,7 +165,6 @@ Sim:AddToggle({
 		autoHatch()
 	end    
 })
-
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -197,7 +175,6 @@ Other:AddParagraph("Other","Mostly scripts ill probably use in the future or int
 local Section = Other:AddSection({
 	Name = "Random Scripts"
 })
-
   -- OTHER Scriptblox.com --
 Other:AddButton({
 	Name = "Scriptblox.com HUB",
@@ -205,7 +182,6 @@ Other:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
-
 -- SCRIPT HUBS
 local HUB = Window:MakeTab({
 	Name = "Script Hubs",
@@ -247,7 +223,6 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
                 loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
   	end    
 })
-
 	
 	
 	
@@ -287,7 +262,6 @@ Other:AddParagraph("Other","Mostly scripts ill probably use in the future or int
 local Section = Other:AddSection({
 	Name = "Random Scripts"
 })
-
   -- OTHER Scriptblox.com --
 Other:AddButton({
 	Name = "Scriptblox.com HUB",
@@ -295,7 +269,6 @@ Other:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
-
 -- Info
 local Info = Window:MakeTab({
 	Name = "Information",
@@ -303,8 +276,5 @@ local Info = Window:MakeTab({
 	PremiumOnly = false
 })
 Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
-
-
-
 OrionLib:Init()
 end
