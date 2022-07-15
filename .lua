@@ -194,7 +194,7 @@ Sim:AddToggle({
 	Name = "Simple Simulator Hub",
 	Callback = function()
 		OrionLib:MakeNotification({
-	Name = "Attachd",
+	Name = "Attached script",
 	Content = "Welcome to Simple Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 10
