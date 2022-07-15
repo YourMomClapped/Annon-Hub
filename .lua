@@ -1,10 +1,10 @@
 local Player = game.Players.LocalPlayer
 if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false})
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
-	Content = "A script hub i created out of bordem, only i have access at the momment.",
+	Content = "Hello, "..Player.Name.." this is a random script hub i build out of bordem",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 	})
