@@ -234,10 +234,18 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
   	end    
 })
-
--- Candy Simulator
-local Section = HUB:AddSection({
-	Name = "Candy Simulator Hub"
+	
+-- Nullware Hub V3
+	local Section = HUB:AddSection({
+	Name = "Nullware Hub V3"
+})
+	HUB:AddParagraph("Nullware Hub V3","Goto Seby's discord: https://discord.gg/ukBFMxVCKS to see the featrues")
+	HUB:AddButton({
+	Name = "Nullware Hub V3",
+	Callback = function()
+      		getgenv().Theme = "Blue" -- To change the UI Theme, set this to one of the following options: "Red", "Purple", "Blue", "Green", "Yellow"
+                loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
+  	end    
 })
 
 	
@@ -249,7 +257,7 @@ local Section = HUB:AddSection({
 	local Section = HUB:AddSection({
 	Name = "More here"
 })
-	HUB:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
+	HUB:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
 	HUB:AddButton({
 	Name = "Simulator Hub",
 	Callback = function()
