@@ -185,17 +185,17 @@ Sim:AddToggle({
 })
 	Sim:AddParagraph("More simulators","Note to self: im kind of loosing room and forgetting where i put everything, this is so i can organize things better")
 	Sim:AddButton({
-	Name = "Hub For Simulators",
+	Name = "Simulator Hub",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
   	end    
 })
 	Sim:AddButton({
 	Name = "Simple Simulator Hub",
 	Callback = function()
 		OrionLib:MakeNotification({
-	Name = "Injected",
-	Content = "Welcome to Simple HUB",
+	Name = "Attachd",
+	Content = "Welcome to Simple Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
