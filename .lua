@@ -1,4 +1,4 @@
-local Player = game.Players.LocalPlayeraaaaaaaaaaaaaa
+local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false})
 OrionLib:MakeNotification({
