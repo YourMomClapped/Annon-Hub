@@ -253,7 +253,7 @@ HUB:AddParagraph("KEY SYSTEM","KEY SYSTEM WARNING: Anime Clicker Simulator has a
 	Callback = function()
 		OrionLib:MakeNotification({
 	Name = "Attached script",
-	Content = "Welcome to Simple Hub",
+	Content = "Welcome to Simple Hub "..Player.Name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
