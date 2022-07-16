@@ -1,3 +1,5 @@
+local Player = game.Players.LocalPlayers
+if Player.UserId == 1201621667
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false})
 OrionLib:MakeNotification({
