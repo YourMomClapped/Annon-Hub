@@ -238,7 +238,7 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 local Section = HUB:AddSection({
 	Name = "Pendulum Hub"
 })
-HUB:AddParagraph("Pendulum Hub","FE Animin Hub")
+HUB:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
 HUB:AddButton({
 	Name = "Pendulum Hub",
 	Callback = function()
