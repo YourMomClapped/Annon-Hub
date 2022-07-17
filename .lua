@@ -164,6 +164,31 @@ Sim:AddToggle({
 		autoHatch()
 	end    
 })
+
+
+	-- OTHER SIMULATOR SCRIPTS
+	local Section = Sim:AddSection({
+	Name = "More here"
+})
+	Sim:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
+	Sim:AddButton({
+	Name = "Simulator Hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+  	end    
+})
+	Sim:AddButton({
+	Name = "Simple Simulator Hub",
+	Callback = function()
+		OrionLib:MakeNotification({
+	Name = "Attached script",
+	Content = "Welcome to Simple Hub "..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+  	end    
+})
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -225,39 +250,11 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
         local Section = HUB:AddSection({
 	Name = "Anime Clicker Simulator"
 })
-HUB:AddParagraph("KEY SYSTEM","KEY SYSTEM WARNING: Anime Clicker Simulator has a key system")
+HUB:AddParagraph("Anime Clicking Simulator","KEY SYSTEM WARNING: Anime Clicker Simulator has a key system")
         HUB:AddButton({
 	Name = "Anime Clicker Simulator",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/FrozenHub/main/KeySystem"))()
-  	end    
-})
-	
-	
-	
-	
-	
-	-- OTHER SIMULATOR SCRIPTS
-	local Section = HUB:AddSection({
-	Name = "More here"
-})
-	HUB:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
-	HUB:AddButton({
-	Name = "Simulator Hub",
-	Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
-  	end    
-})
-	HUB:AddButton({
-	Name = "Simple Simulator Hub",
-	Callback = function()
-		OrionLib:MakeNotification({
-	Name = "Attached script",
-	Content = "Welcome to Simple Hub "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
   	end    
 })
 	
