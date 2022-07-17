@@ -233,25 +233,6 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
         local Section = HUB:AddSection({
 	Name = "Anime Clicker Simulator"
 })
-
--- NIGGER HUB V3
-local Section = HUB:AddSection({
-	Name = "Nigger Hub V3"
-})
-HUB:AddParagraph("Anime Clicking Simulator","KEY SYSTEM WARNING: Anime Clicker Simulator has a key system")
-        HUB:AddButton({
-	Name = "Anime Clicker Simulator",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/FrozenHub/main/KeySystem"))()
-  	end    
-})
-HUB:AddParagraph("Nigger Hub V3","Nigger Hub V3 is currently broken.")
-HUB:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.pl/view/raw/696470a3"))()
-  	end    
-})
 	
 -- Other --
 local Other = Window:MakeTab({
