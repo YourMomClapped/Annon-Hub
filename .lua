@@ -233,7 +233,21 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
         local Section = HUB:AddSection({
 	Name = "Anime Clicker Simulator"
 })
-	
+
+-- Pendulum Hub
+local Section = HUB:AddSection({
+	Name = "Pendulum Hub"
+})
+HUB:AddParagraph("Pendulum Hub","FE Animin Hub")
+HUB:AddButton({
+	Name = "Pendulum Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+
+  	end    
+})
+
+
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
