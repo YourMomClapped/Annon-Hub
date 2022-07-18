@@ -273,6 +273,15 @@ HUB:AddButton({
 
   	end    
 })
+local Section = HUB:AddSection({
+	Name = "ScriptBlox.com"
+})
+HUB:AddButton({
+	Name = "Scriptblox.com HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
+  	end    
+})
 
 
 -- Other --
@@ -282,17 +291,6 @@ local Other = Window:MakeTab({
 	PremiumOnly = false
 })
 Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
-local Section = Other:AddSection({
-	Name = "Random Scripts"
-})
-
-  -- OTHER Scriptblox.com --
-Other:AddButton({
-	Name = "Scriptblox.com HUB",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
-  	end    
-})
 
 -- Info
 local Info = Window:MakeTab({
