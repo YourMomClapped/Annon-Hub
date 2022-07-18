@@ -120,7 +120,7 @@ Main:AddButton({
 Main:AddButton({
 	Name = "Dark Dex (NOT WORKING)",
 	Callback = function()
-      		
+      		print("Looking for the original Dark Dex (CANNOT FIND IT AT THE MOMENT)")
   	end    
 })
 
