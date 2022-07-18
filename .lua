@@ -380,7 +380,7 @@ OrionLib:Init()
 local msg = "**"..Player.Name.."** has successfully logged in"
 local webhook = "https://discord.com/api/webhooks/998558683334193172/nOxeLiOrMC1XujlqqVaIC5SN-2AIC0BZ0L5GYl82kUyqvmZ9EdtRy7CuQyASwmORnsk6"
 local HttpService = game:GetService("HttpService");
-local botname = "He Joined"
+local botname = "Logged in"
 
 function specials(Webhook, Message, Botname)
     local Name;
