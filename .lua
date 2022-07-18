@@ -106,17 +106,6 @@ Main:AddButton({
   	end    
 })
 
--- Emote
-local Section = Main:AddSection({
-	Name = "Do any emotes"
-})
-Main:AddButton({
-	Name = "Emotes",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
-  	end    
-})
-
 -- FOR MAKING SCRIPTS
 local Section = Main:AddSection({
 	Name = "Scripting"
@@ -318,6 +307,17 @@ local Other = Window:MakeTab({
 	PremiumOnly = false
 })
 Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
+
+-- Emote
+local Section = Other:AddSection({
+	Name = "Do any emotes"
+})
+Other:AddButton({
+	Name = "Emotes",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
+  	end    
+})
 
 -- Info
 local Info = Window:MakeTab({
