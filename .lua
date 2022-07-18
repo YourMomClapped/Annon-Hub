@@ -103,11 +103,12 @@ Main:AddButton({
   	end    
 })
 
+-- FOR MAKING SCRIPTS
 local Section = Main:AddSection({
-	Name = "Remote Spy"
+	Name = "Scripting"
 })
 
---Remote Spy
+-- Remote Spy
 Main:AddButton({
 	Name = "Remote Spy",
 	Callback = function()
@@ -115,9 +116,16 @@ Main:AddButton({
   	end    
 })
 
+-- Dark Dex
+Main:AddButton({
+	Name = "Dark Dex (NOT WORKING)",
+	Callback = function()
+      		
+  	end    
+})
 
+-- Prison Life
 if game.PlaceId == 155615604 then
-  -- Prison Life --
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
