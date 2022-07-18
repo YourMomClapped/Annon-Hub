@@ -299,6 +299,17 @@ HUB:AddButton({
   	end    
 })
 
+-- FE SCRIPT
+local Section = HUB:AddSection({
+	Name = "Fe Script"
+})
+HUB:AddButton({
+	Name = "FE SCRIPT (DONT USE YET NOT SAFE)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
+})
+
 
 -- Other --
 local Other = Window:MakeTab({
