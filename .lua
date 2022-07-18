@@ -9,6 +9,11 @@ OrionLib:MakeNotification({
 	})
 
 
+
+
+
+
+
 -- Values
 _G.autoClicker = true -- Tapping Legends X
 _G.autoRebirth = true -- Tapping Legends X
@@ -299,4 +304,49 @@ local Info = Window:MakeTab({
 	PremiumOnly = false
 })
 Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
+
+-- Settings
+local Settings = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Settings:AddParagraph("Settings","Settings are currenty not working (under review)")
+local Section = Settings:AddSection({
+	Name = "Settings"
+})
+
+-- Transparancy
+Settings:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Transparancy",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+-- COLOUR PICKER
+Settings:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+--Keybind For Ui
+Settings:AddBind({
+	Name = "Off/On",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+		print("NOT WORKING: currently under review")
+	end    
+})
+
 OrionLib:Init()
