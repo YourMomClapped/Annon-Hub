@@ -12,8 +12,6 @@ OrionLib:MakeNotification({
 
 
 
-
-
 -- Values
 _G.autoClicker = true -- Tapping Legends X
 _G.autoRebirth = true -- Tapping Legends X
@@ -103,6 +101,12 @@ Main:AddButton({
 	Name = "Chat Spoofer",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Chat-Spoofer/main/.Main"))()
+  	end    
+})
+Main:AddButton({
+	Name = "Chat Spoofer V2",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
   	end    
 })
 
