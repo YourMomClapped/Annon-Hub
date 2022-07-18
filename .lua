@@ -3,7 +3,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
-	Content = "Your have successfully logged in as "..Player.Name.." this is a random script hub i build out of bordem",
+	Content = "Your have successfully logged in as "..Player.Name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 	})
