@@ -96,10 +96,24 @@ Main:AddButton({
 })
 
 -- Chat Spoofer -
+local Section = Main:AddSection({
+	Name = "Talk As Anybody"
+})
 Main:AddButton({
 	Name = "Chat Spoofer",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Chat-Spoofer/main/.Main"))()
+  	end    
+})
+
+-- Emote
+local Section = Main:AddSection({
+	Name = "Do any emotes"
+})
+Main:AddButton({
+	Name = "Emotes",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
   	end    
 })
 
