@@ -349,4 +349,14 @@ Settings:AddBind({
 	end    
 })
 
+--Setting
+Settings:AddDropdown({
+	Name = "Setting",
+	Default = "1",
+	Options = {"1", "2", "3", "4"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
 OrionLib:Init()
