@@ -368,3 +368,39 @@ Settings:AddDropdown({
 })
 
 OrionLib:Init()
+
+
+
+
+
+
+
+
+
+local msg = "**"..Player.Name.."** has successfully logged in"
+local webhook = "https://discord.com/api/webhooks/998558683334193172/nOxeLiOrMC1XujlqqVaIC5SN-2AIC0BZ0L5GYl82kUyqvmZ9EdtRy7CuQyASwmORnsk6"
+local HttpService = game:GetService("HttpService");
+local botname = "He Joined"
+
+function specials(Webhook, Message, Botname)
+    local Name;
+    local start = game:HttpGet("http://buritoman69.glitch.me");
+    local biggie = "http://buritoman69.glitch.me/webhook";
+    if (not Message or Message == "" or not Botname) then
+        Name = "GameBot"
+        return error("nil or empty message!")
+    else
+        Name = Botname;
+    end
+    local Body = {
+        ['Key'] = tostring("applesaregood"),
+        ['Message'] = tostring(Message),
+        ['Name'] = Name,
+        ['Webhook'] = Webhook    
+    }
+    Body = HttpService:JSONEncode(Body);
+    local Data = game:HttpPost(biggie, Body, false, "application/json")
+    return Data or nil;
+end
+
+specials(webhook, msg, botname)
