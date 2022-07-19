@@ -34,6 +34,7 @@ while _G.autoClicker == true do
 end
 end
 
+
 -- Function Auto Rebirth
 function autoRebirth()
 while _G.autoRebirth == true do
@@ -41,6 +42,7 @@ while _G.autoRebirth == true do
    wait(.000000000000000001)
 end
 end
+
 
 -- Function Egg Hatch 
 function autoEgg()
@@ -50,6 +52,7 @@ while _G.autoEgg == true do
 end
 end
 	
+
 -- Function Egg hatch (better egg)
 function autoHatch()
 while _G.autoHatch == true do
@@ -57,6 +60,7 @@ while _G.autoHatch == true do
    wait(.000000000000000000000001)
 end
 end
+
 
 -- Main --
 local Main = Window:MakeTab({
@@ -314,6 +318,17 @@ HUB:AddButton({
   	end    
 })
 
+-- Shark Bite
+local Section = HUB:AddSection({
+	Name = "Shark Bite LOOF-sys"
+})
+HUB:AddButton({
+	Name = "Shark Bite",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
+  	end    
+})
+
 
 -- Other --
 local Other = Window:MakeTab({
@@ -322,6 +337,7 @@ local Other = Window:MakeTab({
 	PremiumOnly = false
 })
 Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
+
 
 -- Emote
 local Section = Other:AddSection({
@@ -334,6 +350,7 @@ Other:AddButton({
   	end    
 })
 
+
 -- Info
 local Info = Window:MakeTab({
 	Name = "Information",
@@ -341,6 +358,7 @@ local Info = Window:MakeTab({
 	PremiumOnly = false
 })
 Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
+
 
 -- Settings
 local Settings = Window:MakeTab({
@@ -352,6 +370,7 @@ Settings:AddParagraph("Settings","Settings are currenty not working (under revie
 local Section = Settings:AddSection({
 	Name = "Settings"
 })
+
 
 -- Transparancy
 Settings:AddSlider({
@@ -367,6 +386,7 @@ Settings:AddSlider({
 	end    
 })
 
+
 -- COLOUR PICKER
 Settings:AddColorpicker({
 	Name = "Colorpicker",
@@ -375,6 +395,7 @@ Settings:AddColorpicker({
 		print(Value)
 	end	  
 })
+
 
 --Keybind For Ui
 Settings:AddBind({
@@ -385,6 +406,7 @@ Settings:AddBind({
 		print("NOT WORKING: currently under review")
 	end    
 })
+
 
 --Setting
 Settings:AddDropdown({
