@@ -10,10 +10,10 @@ OrionLib:MakeNotification({
 	Name = "Annon Hub",
 	Content = "Your have successfully logged in as "..Player.Name..".",
 	Image = "rbxassetid://4483345998",
-	Time = 10
+	Time = 5
 	})
 
--- Dark Dex
+-- ERROR 404 Dark Dex
 function dark()
 OrionLib:MakeNotification({
 	Name = "ERROR: 404",
@@ -22,6 +22,9 @@ OrionLib:MakeNotification({
 	Time = 10
 })
 	end
+
+
+
 
 
 
@@ -396,16 +399,17 @@ Other:AddButton({
 local Section = Other:AddSection({
 	Name = "Player Logger"
 })
+Other:AddParagraph("\players information such as what device they use, what country they live in ETC.")
 Other:AddButton({
-	Name = "Print Player Information",
+	Name = "Print Players Info",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Bukito20/Public-scripts/main/IslandsGrabberGui'))()
-
   	end    
 })
 
-if Player.UserId == 1201621667 then
+
 -- TELEPORT TO MY TEST GAME
+if Player.UserId == 1201621667 then
 local Section = Other:AddSection({
 	Name = "Teleport to Test IDK"
 })
