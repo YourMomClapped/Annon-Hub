@@ -318,6 +318,7 @@ HUB:AddButton({
   	end    
 })
 
+
 -- Shark Bite
 local Section = HUB:AddSection({
 	Name = "Shark Bite LOOF-sys"
@@ -326,6 +327,12 @@ HUB:AddButton({
 	Name = "Shark Bite",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
+  	end    
+})
+HUB:AddButton({
+	Name = "Join Shark Bite Game",
+	Callback = function()
+      		sharkTeleport()
   	end    
 })
 
@@ -449,15 +456,23 @@ OrionLib:Init()
 
 
 
--- Function Teleport
+-- Function Teleport (((TEST IDK)))
 function Teleport()
-	if Player.UserId == 1201621667 then
 local TeleportService = game:GetService("TeleportService")
 local Place = 4632363497
 
 TeleportService:Teleport (Place, Player)
 end
-	end
+
+
+
+-- Function SharkBite Teleport
+function sharkTeleport()
+local TeleportService = game:GetService("TeleportService")
+local Place = 734159876
+
+TeleportService:Teleport (Place, Player)
+end
 
 
 
