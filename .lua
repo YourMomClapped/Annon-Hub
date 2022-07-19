@@ -1,12 +1,28 @@
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
+
+
+
+
+-- NOTIFICATIONS
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
 	Content = "Your have successfully logged in as "..Player.Name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 	})
+
+-- Dark Dex
+function dark()
+OrionLib:MakeNotification({
+	Name = "ERROR: 404",
+	Content = "ERROR: Looking for the orginal Dark Dex (Use Synapse Dark Dex)",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+	end
+
 
 
 
@@ -140,7 +156,7 @@ Main:AddButton({
 Main:AddButton({
 	Name = "Dark Dex (NOT WORKING)",
 	Callback = function()
-      		print("Looking for the original Dark Dex (CANNOT FIND IT AT THE MOMENT)")
+      		dark()
   	end    
 })
 
