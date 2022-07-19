@@ -399,9 +399,9 @@ Other:AddButton({
 local Section = Other:AddSection({
 	Name = "Player Logger"
 })
-Other:AddParagraph("\players information such as what device they use, what country they live in ETC.")
+Other:AddParagraph("Print Player Info","Choose a victim, when chosen it shows their information such as what device they use, what country they live in ETC.")
 Other:AddButton({
-	Name = "Print Players Info",
+	Name = "Print Player Info",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Bukito20/Public-scripts/main/IslandsGrabberGui'))()
   	end    
