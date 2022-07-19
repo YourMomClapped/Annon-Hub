@@ -371,6 +371,19 @@ Other:AddButton({
   	end    
 })
 
+if Player.UserId == 1201621667 then
+-- TELEPORT TO MY TEST GAME
+local Section = Other:AddSection({
+	Name = "Teleport to Test IDK"
+})
+Other:AddButton({
+	Name = "Teleport (Test IDK)",
+	Callback = function()
+      		Teleport()
+  	end    
+})
+end
+
 
 -- Settings
 local Settings = Window:MakeTab({
@@ -435,6 +448,16 @@ OrionLib:Init()
 
 
 
+
+-- Function Teleport
+function Teleport()
+	if Player.UserId == 1201621667 then
+local TeleportService = game:GetService("TeleportService")
+local Place = 4632363497
+
+TeleportService:Teleport (Place, Player)
+end
+	end
 
 
 
