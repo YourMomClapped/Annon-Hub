@@ -81,6 +81,15 @@ Main:AddButton({
   	end    
 })
 
+
+-- Owl Hub
+	Main:AddButton({
+	Name = "Owl Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+
 	-- CMD X MAIN SCRIPT
 	Main:AddButton({
 	Name = "CMD-X",
@@ -257,20 +266,23 @@ HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/AForgottenAccount/Rebrith-hub/main/Rebrith-hub"))()
   	end    
 })
-	
--- Owl Hub
-	local Section = HUB:AddSection({
-	Name = "Owl Hub"
+
+
+-- Domain X
+    local Section = HUB:AddSection({
+	Name = "Domain X"
 })
-	HUB:AddButton({
-	Name = "Owl Hub",
+HUB:AddParagraph("Domain X","Smart Script Domain X script hub")
+HUB:AddButton({
+	Name = "Domain X",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
   	end    
 })
-	
+
+
 -- Nullware Hub V3
-	local Section = HUB:AddSection({
+local Section = HUB:AddSection({
 	Name = "Nullware Hub V3"
 })
 	HUB:AddParagraph("Nullware Hub V3","Goto Seby's discord: https://discord.gg/ukBFMxVCKS to see the featrues")
