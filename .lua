@@ -330,6 +330,14 @@ HUB:AddButton({
 })
 
 
+-- Info
+local Info = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
+
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -349,16 +357,6 @@ Other:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
   	end    
 })
-
-
--- Info
-local Info = Window:MakeTab({
-	Name = "Information",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
-
 
 -- Settings
 local Settings = Window:MakeTab({
