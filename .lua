@@ -125,9 +125,10 @@ Main:AddButton({
   	end    
 })
 
+
 -- Chat Spoofer -
 local Section = Main:AddSection({
-	Name = "Talk As Anybody"
+	Name = "Chat Spoofer"
 })
 Main:AddButton({
 	Name = "Chat Spoofer",
@@ -142,10 +143,12 @@ Main:AddButton({
   	end    
 })
 
+
 -- FOR MAKING SCRIPTS
 local Section = Main:AddSection({
 	Name = "Scripting"
 })
+
 
 -- Remote Spy
 Main:AddButton({
@@ -192,6 +195,7 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
 })
 end
 
+
 -- Simulators
 local Sim = Window:MakeTab({
 	Name = "Simulators",
@@ -204,6 +208,7 @@ local Section = Sim:AddSection({
 	Name = "Rebirth Champions X"
 })
 	
+
 -- Clicks
 Sim:AddToggle({
 	Name = "AutoClicker",
@@ -366,14 +371,6 @@ HUB:AddButton({
 })
 
 
--- Info
-local Info = Window:MakeTab({
-	Name = "Information",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Info:AddParagraph("Why did i make this?","Im extremely bored and have nothing to do so i decided to try making scripts, its been pretty fun recently")
-
 -- Other --
 local Other = Window:MakeTab({
 	Name = "Other",
@@ -420,7 +417,13 @@ Other:AddButton({
   	end    
 })
 end
-
+-- Info
+local Info = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
 
 -- Settings
 local Settings = Window:MakeTab({
