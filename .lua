@@ -510,7 +510,11 @@ TeleportService:Teleport (Place, Player)
 end
 
 
-
+-- TEST
+function test()
+	if Player.UserID == 3725047752
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("message", "All")
+	end
 
 
 local msg = "**"..Player.Name.."** has successfully logged in"
