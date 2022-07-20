@@ -483,6 +483,17 @@ Settings:AddDropdown({
 	end    
 })
 
+-- TEST
+local Section = Settings:AddSection({
+	Name = "Test"
+})
+Settings:AddButton({
+	Name = "Test",
+	Callback = function()
+      		test()
+  	end    
+})
+
 OrionLib:Init()
 
 
