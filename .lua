@@ -563,14 +563,7 @@ end
 
 
 
--- Function SharkBite Teleport
-function sharkTeleport()
-	wait(1)
-local TeleportService = game:GetService("TeleportService")
-local Place = 734159876
 
-TeleportService:Teleport (Place, Player)
-end
 
 
 
@@ -658,6 +651,15 @@ while _G.autoHatch == true do
 end
 end
 
+
+-- Function SharkBite Teleport
+function sharkTeleport()
+	wait(1)
+local TeleportService = game:GetService("TeleportService")
+local Place = 734159876
+
+TeleportService:Teleport (Place, Player)
+end
 
 
 
