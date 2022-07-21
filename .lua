@@ -540,8 +540,12 @@ Settings:AddBind({
 
 
 --[[
-█▀ █▀▀ ▀█▀ ▀█▀ █ █▄░█ █▀▀ █▀
-▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█
+░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░
 ]]
 Settings:AddDropdown({
 	Name = "Setting",
@@ -586,14 +590,7 @@ OrionLib:Init()
 
 
 
--- Function Teleport (((TEST IDK)))
-function Teleport()
-	wait(1)
-local TeleportService = game:GetService("TeleportService")
-local Place = 4632363497
 
-TeleportService:Teleport (Place, Player)
-end
 
 
 
@@ -691,6 +688,16 @@ function sharkTeleport()
 	wait(1)
 local TeleportService = game:GetService("TeleportService")
 local Place = 734159876
+
+TeleportService:Teleport (Place, Player)
+end
+
+
+-- Function Teleport (((TEST IDK)))
+function Teleport()
+	wait(1)
+local TeleportService = game:GetService("TeleportService")
+local Place = 4632363497
 
 TeleportService:Teleport (Place, Player)
 end
