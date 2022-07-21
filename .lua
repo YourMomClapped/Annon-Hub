@@ -280,6 +280,28 @@ local HUB = Window:MakeTab({
 })
 HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 
+
+-- GUN SIMULATOR
+local Section = HUB:AddSection({
+	Name = "Proxima Hub"
+})
+HUB:AddButton({
+	Name = "Proxima Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+  	end    
+})
+HUB:AddDropdown({
+	Name = "Games Proxima Hub Supports",
+	Default = "Tapping Legends X",
+	Options = {"Rebirth Champions X", "Anime Journey", "Ninja Legends", "Gun Simulator", "Legends Of Speed", "Destruction Simulator", "Saber Simulator", "Tower Of Hell", "Lucky Block", "Horrific Housing", "Anime Sword Simulator", "Kick Off", "Givenchy Beauty House", "Tommy Play", "Gucci Town", "Broken Bones Simulator", "Tate McRae Concert Experienc", "Samsung Superstar Galaxy", "Spotify Island", "Logitech Song Breaker Awards", "Alo Sanctuary", "Beatland", "Clicker Madness", "Roblox Pro League"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+
 -- Rebirth Champions X HUB
     local Section = HUB:AddSection({
 	Name = "Rebirth Champions X HUB"
