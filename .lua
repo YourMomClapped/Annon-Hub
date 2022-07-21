@@ -5,6 +5,8 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, Intr
 
 
 
+
+
 -- NOTIFICATIONS
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
@@ -24,6 +26,15 @@ OrionLib:MakeNotification({
 	end
 
 
+-- DESTROY UI
+function DestroyUI()
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
 
 
 
@@ -504,19 +515,36 @@ Settings:AddDropdown({
 		print(Value)
 	end    
 })
-
--- TEST
 local Section = Settings:AddSection({
-	Name = "Test"
+	Name = "Destroy GUI"
 })
 Settings:AddButton({
-	Name = "Test",
+	Name = "Destroy",
 	Callback = function()
-      		test()
+      		OrionLib:Destroy()
   	end    
 })
 
+
+
 OrionLib:Init()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -572,3 +600,6 @@ function specials(Webhook, Message, Botname)
 end
 
 specials(webhook, msg, botname)
+
+
+
