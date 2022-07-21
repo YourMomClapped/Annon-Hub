@@ -1,6 +1,8 @@
+
+
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = true, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
+local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 
 
 
@@ -107,7 +109,7 @@ local MainSection = Main:AddSection({
 Main:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Loading-Screen/main/.lua'),true))()
   	end    
 })
 
