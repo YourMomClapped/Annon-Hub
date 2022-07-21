@@ -602,6 +602,69 @@ function specials(Webhook, Message, Botname)
 end
 
 specials(webhook, msg, botname)
+OrionLib:Init()
+
+
+
+
+
+
+
+
+--[[
+███████╗██╗░░░██╗███╗░░██╗░█████╗░████████╗██╗░█████╗░███╗░░██╗░██████╗
+██╔════╝██║░░░██║████╗░██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██╔════╝
+█████╗░░██║░░░██║██╔██╗██║██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░
+██╔══╝░░██║░░░██║██║╚████║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
+██║░░░░░╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
+╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
+
+
+
+ Tapping Legends X
+ Functions Auto Clicker         ]]
+ 
+function autoClicker()
+while _G.autoClicker == true do
+   game:GetService("ReplicatedStorage").Events.Click3:FireServer()
+   wait(.00000000000000000000000000000000000000000000000000000000000000001)
+end
+end
+
+
+-- Function Auto Rebirth
+function autoRebirth()
+while _G.autoRebirth == true do
+   game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(40)
+   wait(.000000000000000001)
+end
+end
+
+
+-- Function Egg Hatch 
+function autoEgg()
+while _G.autoEgg == true do
+   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
+   wait(.0000000000000000000000001)
+end
+end
+	
+
+-- Function Egg hatch (better egg)
+function autoHatch()
+while _G.autoHatch == true do
+   game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("SpaceLab","Triple")
+   wait(.000000000000000000000001)
+end
+end
+
+
+
+
+
+
+
+
 
 
 
