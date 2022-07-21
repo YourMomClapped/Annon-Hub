@@ -94,7 +94,11 @@ end
 end
 
 
--- Main --
+--[[
+▒█▀▄▀█ █▀▀█ ░▀░ █▀▀▄ 
+▒█▒█▒█ █▄▄█ ▀█▀ █░░█ 
+▒█░░▒█ ▀░░▀ ▀▀▀ ▀░░▀
+]]
 local Main = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
