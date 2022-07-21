@@ -57,6 +57,9 @@ _G.autoEgg = true -- Tapping Legends X
 _G.autoHatch = true -- Tapping Legends X
 
 
+_G.sliderString = "string" -- slider string
+_G.niggaPass = "3: dumb niggas haha"
+
 
 
 
@@ -130,18 +133,29 @@ Profile:AddParagraph("Profile","Annon Hub iS the best hub ofc ;) made by Annon#7
 local Section = Profile:AddSection({
 	Name = "Whats Annon Hub For"
 })
-Profile:AddSlider({
-	Name = "Used
-	Min = 0,
-	Max = 20,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "bananas",
+Profile:AddDropdown({
+	Name = "Down",
+	Default = "1: Drop Down here haha",
+	Options = {"1: Drop Down here haha", "2: print that value bitch", "3: dumb niggas haha"},
 	Callback = function(Value)
-		print(Value)
+		_G.sliderString = Value
 	end    
 })
+
+Profile:AddButton({
+	Name = "Value",
+	Callback = function()
+      		if_sliderString == _G.niggaPass then
+		niggaPass()
+		else
+			
+  	end    
+})
+
+
+
+
+
 Profile:AddButton({
 	Name = "Click For Good Luck.",
 	Callback = function()
@@ -690,9 +704,25 @@ specials(webhook, msg, botname)
 OrionLib:Init()
 
 
+function niggaPass()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+local Nigga = Window:MakeTab({
+	Name = "Nigga Hub Faggot Monkey",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+end
 
+function noniggaPass()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-
-
+local Nigga = Window:MakeTab({
+	Name = ""..Player.Name.." is a faggot",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+end
 
