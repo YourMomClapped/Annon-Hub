@@ -7,8 +7,6 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, Int
 
 
 
-
-
 -- NOTIFICATIONS
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
@@ -390,19 +388,7 @@ local Section = HUB:AddSection({
   	end    
 })
 
-
--- Pendulum Hub
-local Section = HUB:AddSection({
-	Name = "Pendulum Hub"
-})
-HUB:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
-HUB:AddButton({
-	Name = "Pendulum Hub",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
-
-  	end    
-})
+-- Script Blox
 local Section = HUB:AddSection({
 	Name = "ScriptBlox.com"
 })
@@ -412,18 +398,6 @@ HUB:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Scriptblox.com/main/.lua"))()
   	end    
 })
-
--- FE SCRIPT
-local Section = HUB:AddSection({
-	Name = "Fe Script"
-})
-HUB:AddButton({
-	Name = "FE SCRIPT (DONT USE YET NOT SAFE)",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
-  	end    
-})
-
 
 -- Shark Bite
 local Section = HUB:AddSection({
@@ -441,6 +415,47 @@ HUB:AddButton({
       		sharkTeleport()
   	end    
 })
+
+
+--[[
+███████╗███████╗  ░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
+██╔════╝██╔════╝  ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+█████╗░░█████╗░░  ╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
+██╔══╝░░██╔══╝░░  ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
+██║░░░░░███████╗  ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
+╚═╝░░░░░╚══════╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
+
+local FE = Window:MakeTab({
+	Name = "FE Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Pendulum Hub
+local Section = FE:AddSection({
+	Name = "Pendulum Hub"
+})
+FE:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
+FE:AddButton({
+	Name = "Pendulum Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+
+  	end    
+})
+
+-- FE SCRIPT
+local Section = FE:AddSection({
+	Name = "Fe Script"
+})
+FE:AddButton({
+	Name = "FE SCRIPT (DONT USE YET NOT SAFE)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
+})
+
+
 
 
 --[[
