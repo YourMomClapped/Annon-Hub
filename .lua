@@ -151,14 +151,6 @@ Main:AddButton({
   	end    
 })
 
-	-- CMD X MAIN SCRIPT
-	Main:AddButton({
-	Name = "CMD-X",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-  	end    
-})
-
   -- Silent Aim --
 Main:AddButton({
 	Name = "Universial",
@@ -166,9 +158,23 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
   	end    
 })
+
+-- CMD X MAIN SCRIPT
+local Section = Main:AddSection({
+	Name = "Cmd X"
+})
+Main:AddParagraph("Cmd X","Using Cmd X breaks your avatar (NO IDEA WHY) the commands work completly fine.")
+Main:AddButton({
+Name = "CMD-X",
+Callback = function()
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+  end    
+})
+
+
 -- Emote
 local Section = Main:AddSection({
-	Name = "Do any emote you choose, a few custom ones too"
+	Name = "Emotes"
 })
 Main:AddButton({
 	Name = "Emotes",
@@ -252,6 +258,55 @@ end
 
 
 --[[
+███╗░░░███╗░█████╗░██████╗░███████╗  ██████╗░██╗░░░██╗██╗░░░██╗  ███╗░░░███╗███████╗
+████╗░████║██╔══██╗██╔══██╗██╔════╝  ██╔══██╗██║░░░██║╚██╗░██╔╝  ████╗░████║██╔════╝
+██╔████╔██║███████║██║░░██║█████╗░░  ██████╦╝██║░░░██║░╚████╔╝░  ██╔████╔██║█████╗░░
+██║╚██╔╝██║██╔══██║██║░░██║██╔══╝░░  ██╔══██╗██║░░░██║░░╚██╔╝░░  ██║╚██╔╝██║██╔══╝░░
+██║░╚═╝░██║██║░░██║██████╔╝███████╗  ██████╦╝╚██████╔╝░░░██║░░░  ██║░╚═╝░██║███████╗
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝  ╚═════╝░░╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚══════╝]]
+
+local Made = Window:MakeTab({
+	Name = "My Script Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	-- OTHER SIMULATOR SCRIPTS
+	local Section = Made:AddSection({
+		Name = "My Simulator Hubs"
+	})
+		Made:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
+		Made:AddButton({
+		Name = "Simulator Hub",
+		Callback = function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+		  end    
+	})
+		Made:AddButton({
+		Name = "Simple Simulator Hub",
+		Callback = function()
+			OrionLib:MakeNotification({
+		Name = "Attached script",
+		Content = "Welcome to Simple Hub "..Player.Name..".",
+		Image = "rbxassetid://4483345998",
+		Time = 10
+	})
+				  loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+		  end    
+	})
+	local Section = Made:AddSection({
+		Name = "Tycoon Hub"
+	})
+	Made:AddButton({
+		Name = "Tycoon Hub",
+		Callback = function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Tycoon-Hub/main/.lua'),true))()
+		  end    
+	})
+
+
+
+
+--[[
 ██╗███╗░░██╗███████╗░█████╗░
 ██║████╗░██║██╔════╝██╔══██╗
 ██║██╔██╗██║█████╗░░██║░░██║
@@ -265,8 +320,6 @@ local Info = Window:MakeTab({
 	PremiumOnly = false
 })
 Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
-
-
 
 
 
@@ -326,31 +379,6 @@ Sim:AddToggle({
 		_G.autoHatch = Value
 		autoHatch()
 	end    
-})
-
-
-	-- OTHER SIMULATOR SCRIPTS
-	local Section = Sim:AddSection({
-	Name = "More here"
-})
-	Sim:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
-	Sim:AddButton({
-	Name = "Simulator Hub",
-	Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
-  	end    
-})
-	Sim:AddButton({
-	Name = "Simple Simulator Hub",
-	Callback = function()
-		OrionLib:MakeNotification({
-	Name = "Attached script",
-	Content = "Welcome to Simple Hub "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
-  	end    
 })
 
 
@@ -459,6 +487,7 @@ local Section = HUB:AddSection({
                 loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
   	end    
 })
+
 
 
 -- Shark Bite
@@ -596,81 +625,6 @@ Other:AddDropdown({
 
 
 
---[[
-░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
-██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
-╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
-░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
-██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
-╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░]]
-
-local Settings = Window:MakeTab({
-	Name = "Settings",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-Settings:AddParagraph("Settings","Settings are currenty not working (under review)")
-local Section = Settings:AddSection({
-	Name = "Settings"
-})
-
-
--- Transparancy
-Settings:AddSlider({
-	Name = "Slider",
-	Min = 0,
-	Max = 20,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Transparancy",
-	Callback = function(Value)
-		print(Value)
-	end    
-})
-
-
--- COLOUR PICKER
-Settings:AddColorpicker({
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
-	Callback = function(Value)
-		print(Value)
-	end	  
-})
-
-
---Keybind For Ui
-Settings:AddBind({
-	Name = "Off/On",
-	Default = Enum.KeyCode.E,
-	Hold = false,
-	Callback = function()
-		print("NOT WORKING: currently under review")
-	end    
-})
-
-
-Settings:AddDropdown({
-	Name = "Setting",
-	Default = "1",
-	Options = {"1", "2", "3", "4"},
-	Callback = function(Value)
-		print(Value)
-	end    
-})
-local Section = Settings:AddSection({
-	Name = "Destroy GUI"
-})
-Settings:AddButton({
-	Name = "Destroy",
-	Callback = function()
-      		OrionLib:Destroy()
-  	end    
-})
-
 
 
 
@@ -690,8 +644,6 @@ Settings:AddButton({
 
 OrionLib:Init()
 OrionLib:Destroy()
-
-
 
 
 
