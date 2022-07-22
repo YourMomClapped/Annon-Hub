@@ -110,6 +110,7 @@ end
 
 
 
+
 --[[
 ███╗░░░███╗░█████╗░██╗███╗░░██╗
 ██╔████╔██║███████║██║██╔██╗██║
@@ -239,6 +240,28 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
   	end    
 })
 end
+
+
+
+
+
+--[[
+██╗███╗░░██╗███████╗░█████╗░
+██║████╗░██║██╔════╝██╔══██╗
+██║██╔██╗██║█████╗░░██║░░██║
+██║██║╚████║██╔══╝░░██║░░██║
+██║██║░╚███║██║░░░░░╚█████╔╝
+╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
+
+local Info = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
+
+
+
 
 
 --[[
@@ -552,27 +575,23 @@ Other:AddDropdown({
 
 
 
---[[
-██╗███╗░░██╗███████╗░█████╗░
-██║████╗░██║██╔════╝██╔══██╗
-██║██╔██╗██║█████╗░░██║░░██║
-██║██║╚████║██╔══╝░░██║░░██║
-██║██║░╚███║██║░░░░░╚█████╔╝
-╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░
-]]
-local Info = Window:MakeTab({
-	Name = "Information",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
 
--- Settings
+
+--[[
+░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░]]
+
 local Settings = Window:MakeTab({
 	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+
 Settings:AddParagraph("Settings","Settings are currenty not working (under review)")
 local Section = Settings:AddSection({
 	Name = "Settings"
@@ -615,14 +634,6 @@ Settings:AddBind({
 })
 
 
---[[
-░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
-██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
-╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
-░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
-██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
-╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░
-]]
 Settings:AddDropdown({
 	Name = "Setting",
 	Default = "1",
