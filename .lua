@@ -410,6 +410,17 @@ HUB:AddDropdown({
 })
 
 
+-- Frozen Hub
+local Section = HUB:AddSection({
+	Name = "Frozen Hub"
+})
+HUB:AddButton({
+	Name = "Frozen Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/FrozenHub/main/KeySystem"))()
+  	end    
+})
+
 
 -- Rebirth Champions X HUB
     local Section = HUB:AddSection({
