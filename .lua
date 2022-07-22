@@ -159,6 +159,16 @@ Main:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
   	end    
 })
+-- Emote
+local Section = Main:AddSection({
+	Name = "Do any emote you choose, a few custom ones too"
+})
+Main:AddButton({
+	Name = "Emotes",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
+  	end    
+})
 
 
 -- Chat Spoofer -
@@ -486,19 +496,8 @@ local Other = Window:MakeTab({
 Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
 
 
--- Emote
-local Section = Other:AddSection({
-	Name = "Do any emotes"
-})
-Other:AddButton({
-	Name = "Emotes",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
-  	end    
-})
 
-
--- PLAYER LOGGER
+-- Log Player Information
 local Section = Other:AddSection({
 	Name = "Player Logger"
 })
