@@ -315,8 +315,8 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 		  end    
 	})
 	Scripts:AddDropdown({
-		Name = "Build a boat features",
-		Default = "1",
+		Name = "Click me to see features",
+		Default = "Copy players builds",
 		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
 		Callback = function(Value)
 			print(Value)
