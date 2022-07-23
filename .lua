@@ -1,10 +1,6 @@
 
 
 local Player = game.Players.LocalPlayer
-
-
-
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 
@@ -117,6 +113,21 @@ while _G.autoHatch == true do
 end
 end
 
+--------Build A Boat infinite blocks
+function infiniteBlocks()
+	_G.RUN = true
+spawn(function()
+coroutine.wrap(function()
+while _G.RUN do wait()
+coroutine.wrap(function()
+while _G.RUN do wait()
+workspace.ItemBoughtFromShop:InvokeServer("Winter Chest",math.floor(game:GetService("Players").LocalPlayer.Data.Gold.Value / 100))
+end
+end)()
+end
+end)()
+end)
+end
 
 
 
@@ -279,6 +290,47 @@ Info:AddParagraph("Information","Currently in Alpha, mostly messing around with 
 
 
 --[[
+░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
+██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
+░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
+██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
+
+local Scripts = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
+
+
+	local Section = Scripts:AddSection({
+		Name = "Build a boat"
+	})
+	Scripts:AddButton({
+		Name = "Build A Boat",
+		Callback = function()
+				  
+		  end    
+	})
+	Scripts:AddDropdown({
+		Name = "Build a boat features",
+		Default = "1",
+		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
+		Callback = function(Value)
+			print(Value)
+		end    
+	})
+	Scripts:AddButton({
+		Name = "Build a boat: Infinite Blocks",
+		Callback = function()
+				  infiniteBlocks()
+		  end    
+	})
+
+
+--[[
 ░██████╗██╗███╗░░░███╗██╗░░░██╗██╗░░░░░░█████╗░████████╗░█████╗░██████╗░░██████╗
 ██╔════╝██║████╗░████║██║░░░██║██║░░░░░██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔════╝
 ╚█████╗░██║██╔████╔██║██║░░░██║██║░░░░░███████║░░░██║░░░██║░░██║██████╔╝╚█████╗░
@@ -287,7 +339,7 @@ Info:AddParagraph("Information","Currently in Alpha, mostly messing around with 
 ╚═════╝░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═════╝░
 ]]
 local Sim = Window:MakeTab({
-	Name = "Simulators",
+	Name = "Scripts I made",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -297,44 +349,6 @@ local Section = Sim:AddSection({
 	Name = "Rebirth Champions X"
 })
 	
-
--- Clicks
-Sim:AddToggle({
-	Name = "AutoClicker",
-	Default = false,
-	Callback = function(Value)
-		_G.autoClicker = Value
-		autoClicker()
-	end    
-})
-
--- Rebirth Champions X Rebirths
-Sim:AddToggle({
-	Name = "Auto Rebirth",
-	Default = false,
-	Callback = function(Value)
-		_G.autoRebirth = Value
-		autoRebirth()
-	end    
-})
-
--- Rebirth Champions X Egg hatching
-Sim:AddToggle({
-	Name = "Auto Hatch Kraken",
-	Default = false,
-	Callback = function(Value)
-		_G.autoEgg = Value
-		autoEgg()
-	end  
-})
-	Sim:AddToggle({
-	Name = "AutoHatch",
-	Default = false,
-	Callback = function(Value)
-		_G.autoHatch = Value
-		autoHatch()
-	end    
-})
 
 
 	-- OTHER SIMULATOR SCRIPTS
@@ -559,6 +573,7 @@ Other:AddButton({
 
 
 -- TELEPORT TO MY TEST GAME
+if Player.UserId == 1201621667 then
 local Section = Other:AddSection({
 	Name = "Teleport to Test IDK"
 })
@@ -770,5 +785,12 @@ OrionLib:Init()
 ]]
 
 function niggaHub()
-	game.Players.LocalPlayer:Kick(Nigga you are obsessed with digs kill yourself)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Nigga = Window:MakeTab({
+	Name = "Nigga Hub Faggot Monkey",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 end
