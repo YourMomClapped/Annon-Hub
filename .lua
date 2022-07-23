@@ -130,6 +130,19 @@ end)
 end
 
 
+---------------------- FUNCTION REMOTE SPY HYPE ----------------
+function remote()
+	local owner = "Upbolt"
+local branch = "revision"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+
+webImport("init")
+webImport("ui/main")
+end
+
 
 
 --[[
@@ -230,6 +243,13 @@ Main:AddButton({
       		loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
+Main:AddButton({
+	Name = "Better Remote Spy",
+	Callback = function()
+      		remote()
+  	end    
+})
+
 
 -- Dark Dex
 Main:AddButton({
@@ -302,9 +322,9 @@ local Scripts = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Scripts:AddParagraph("Scripts","Random scripts that i would mostly use (More then 'Other')")
+Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
 
---------------- BUILD A BOAT -------------------
+
 	local Section = Scripts:AddSection({
 		Name = "Build a boat"
 	})
@@ -315,8 +335,8 @@ Scripts:AddParagraph("Scripts","Random scripts that i would mostly use (More the
 		  end    
 	})
 	Scripts:AddDropdown({
-		Name = "Click me to see features",
-		Default = "Copy players builds",
+		Name = "Build a boat features",
+		Default = "1",
 		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
 		Callback = function(Value)
 			print(Value)
