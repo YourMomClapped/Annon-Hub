@@ -559,7 +559,6 @@ Other:AddButton({
 
 
 -- TELEPORT TO MY TEST GAME
-if Player.UserId == 1201621667 then
 local Section = Other:AddSection({
 	Name = "Teleport to Test IDK"
 })
