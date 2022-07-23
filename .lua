@@ -240,13 +240,8 @@ local Section = Main:AddSection({
 Main:AddButton({
 	Name = "Remote Spy",
 	Callback = function()
-      		loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
-  	end    
-})
-Main:AddButton({
-	Name = "Better Remote Spy",
-	Callback = function()
       		remote()
+			  loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
 
