@@ -305,26 +305,6 @@ local Made = Window:MakeTab({
 		  end    
 	})
 
-
-
-
---[[
-██╗███╗░░██╗███████╗░█████╗░
-██║████╗░██║██╔════╝██╔══██╗
-██║██╔██╗██║█████╗░░██║░░██║
-██║██║╚████║██╔══╝░░██║░░██║
-██║██║░╚███║██║░░░░░╚█████╔╝
-╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
-
-local Info = Window:MakeTab({
-	Name = "Information",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
-
-
-
 --[[
 ██████╗░░█████╗░███╗░░██╗██████╗░░█████╗░███╗░░░███╗  ░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
 ██╔══██╗██╔══██╗████╗░██║██╔══██╗██╔══██╗████╗░████║  ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
@@ -349,6 +329,24 @@ Scripts:AddButton({
       		Dahood()
   	end    
 })
+
+
+--[[
+██╗███╗░░██╗███████╗░█████╗░
+██║████╗░██║██╔════╝██╔══██╗
+██║██╔██╗██║█████╗░░██║░░██║
+██║██║╚████║██╔══╝░░██║░░██║
+██║██║░╚███║██║░░░░░╚█████╔╝
+╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
+
+local Info = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
+
+
 
 --[[
 ░██████╗░█████╗░██████╗░██╗██████╗░████████╗  ██╗░░██╗██╗░░░██╗██████╗░░██████╗
@@ -590,14 +588,20 @@ Other:AddDropdown({
 
 
 
+--[[
+██╗███╗░░██╗███████╗░█████╗░
+██║████╗░██║██╔════╝██╔══██╗
+██║██╔██╗██║█████╗░░██║░░██║
+██║██║╚████║██╔══╝░░██║░░██║
+██║██║░╚███║██║░░░░░╚█████╔╝
+╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
 
-
-
-
-
-
-
-
+local Info = Window:MakeTab({
+	Name = "information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
 
 
 
