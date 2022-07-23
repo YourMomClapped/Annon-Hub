@@ -302,9 +302,9 @@ local Scripts = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
+Scripts:AddParagraph("Scripts","Random scripts that i would mostly use (More then 'Other')")
 
-
+--------------- BUILD A BOAT -------------------
 	local Section = Scripts:AddSection({
 		Name = "Build a boat"
 	})
