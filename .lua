@@ -1,6 +1,10 @@
 
 
 local Player = game.Players.LocalPlayer
+
+
+
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 
@@ -202,8 +206,6 @@ Main:AddButton({
 })
 
 
-
-
 -- FOR MAKING SCRIPTS
 local Section = Main:AddSection({
 	Name = "Scripting"
@@ -260,78 +262,6 @@ end
 
 
 --[[
-███╗░░░███╗░█████╗░██████╗░███████╗  ██████╗░██╗░░░██╗██╗░░░██╗  ███╗░░░███╗███████╗
-████╗░████║██╔══██╗██╔══██╗██╔════╝  ██╔══██╗██║░░░██║╚██╗░██╔╝  ████╗░████║██╔════╝
-██╔████╔██║███████║██║░░██║█████╗░░  ██████╦╝██║░░░██║░╚████╔╝░  ██╔████╔██║█████╗░░
-██║╚██╔╝██║██╔══██║██║░░██║██╔══╝░░  ██╔══██╗██║░░░██║░░╚██╔╝░░  ██║╚██╔╝██║██╔══╝░░
-██║░╚═╝░██║██║░░██║██████╔╝███████╗  ██████╦╝╚██████╔╝░░░██║░░░  ██║░╚═╝░██║███████╗
-╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝  ╚═════╝░░╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚══════╝]]
-
-local Made = Window:MakeTab({
-	Name = "My Script Hubs",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-	-- OTHER SIMULATOR SCRIPTS
-	local Section = Made:AddSection({
-		Name = "My Simulator Hubs"
-	})
-		Made:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
-		Made:AddButton({
-		Name = "Simulator Hub",
-		Callback = function()
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
-		  end    
-	})
-		Made:AddButton({
-		Name = "Simple Simulator Hub",
-		Callback = function()
-			OrionLib:MakeNotification({
-		Name = "Attached script",
-		Content = "Welcome to Simple Hub "..Player.Name..".",
-		Image = "rbxassetid://4483345998",
-		Time = 10
-	})
-				  loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
-		  end    
-	})
-	local Section = Made:AddSection({
-		Name = "Tycoon Hub"
-	})
-	Made:AddButton({
-		Name = "Tycoon Hub",
-		Callback = function()
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Tycoon-Hub/main/.lua'),true))()
-		  end    
-	})
-
---[[
-██████╗░░█████╗░███╗░░██╗██████╗░░█████╗░███╗░░░███╗  ░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
-██╔══██╗██╔══██╗████╗░██║██╔══██╗██╔══██╗████╗░████║  ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-██████╔╝███████║██╔██╗██║██║░░██║██║░░██║██╔████╔██║  ╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
-██╔══██╗██╔══██║██║╚████║██║░░██║██║░░██║██║╚██╔╝██║  ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
-██║░░██║██║░░██║██║░╚███║██████╔╝╚█████╔╝██║░╚═╝░██║  ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
-╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░░╚════╝░╚═╝░░░░░╚═╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
-
-local Scripts = Window:MakeTab({
-	Name = "Random Scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- DA HOOD Legit looking silent aim
-local Section = Scripts:AddSection({
-	Name = "Da hood scripts (For you da hood losers)"
-})
-Scripts:AddButton({
-	Name = "Da hood legit looking silent aim",
-	Callback = function()
-      		Dahood()
-  	end    
-})
-
-
---[[
 ██╗███╗░░██╗███████╗░█████╗░
 ██║████╗░██║██╔════╝██╔══██╗
 ██║██╔██╗██║█████╗░░██║░░██║
@@ -349,13 +279,97 @@ Info:AddParagraph("Information","Currently in Alpha, mostly messing around with 
 
 
 --[[
+░██████╗██╗███╗░░░███╗██╗░░░██╗██╗░░░░░░█████╗░████████╗░█████╗░██████╗░░██████╗
+██╔════╝██║████╗░████║██║░░░██║██║░░░░░██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔════╝
+╚█████╗░██║██╔████╔██║██║░░░██║██║░░░░░███████║░░░██║░░░██║░░██║██████╔╝╚█████╗░
+░╚═══██╗██║██║╚██╔╝██║██║░░░██║██║░░░░░██╔══██║░░░██║░░░██║░░██║██╔══██╗░╚═══██╗
+██████╔╝██║██║░╚═╝░██║╚██████╔╝███████╗██║░░██║░░░██║░░░╚█████╔╝██║░░██║██████╔╝
+╚═════╝░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═════╝░
+]]
+local Sim = Window:MakeTab({
+	Name = "Simulators",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Sim:AddParagraph("Simulator Scripts","This is mostly for testing purposes")
+-- Rebirth Champions X
+local Section = Sim:AddSection({
+	Name = "Rebirth Champions X"
+})
+	
+
+-- Clicks
+Sim:AddToggle({
+	Name = "AutoClicker",
+	Default = false,
+	Callback = function(Value)
+		_G.autoClicker = Value
+		autoClicker()
+	end    
+})
+
+-- Rebirth Champions X Rebirths
+Sim:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+		_G.autoRebirth = Value
+		autoRebirth()
+	end    
+})
+
+-- Rebirth Champions X Egg hatching
+Sim:AddToggle({
+	Name = "Auto Hatch Kraken",
+	Default = false,
+	Callback = function(Value)
+		_G.autoEgg = Value
+		autoEgg()
+	end  
+})
+	Sim:AddToggle({
+	Name = "AutoHatch",
+	Default = false,
+	Callback = function(Value)
+		_G.autoHatch = Value
+		autoHatch()
+	end    
+})
+
+
+	-- OTHER SIMULATOR SCRIPTS
+	local Section = Sim:AddSection({
+	Name = "More here"
+})
+	Sim:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
+	Sim:AddButton({
+	Name = "Simulator Hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
+  	end    
+})
+	Sim:AddButton({
+	Name = "Simple Simulator Hub",
+	Callback = function()
+		OrionLib:MakeNotification({
+	Name = "Attached script",
+	Content = "Welcome to Simple Hub "..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+  	end    
+})
+
+
+--[[
 ░██████╗░█████╗░██████╗░██╗██████╗░████████╗  ██╗░░██╗██╗░░░██╗██████╗░░██████╗
 ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝  ██║░░██║██║░░░██║██╔══██╗██╔════╝
 ╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░  ███████║██║░░░██║██████╦╝╚█████╗░
 ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░  ██╔══██║██║░░░██║██╔══██╗░╚═══██╗
 ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░  ██║░░██║╚██████╔╝██████╦╝██████╔╝
-╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░  ╚═╝░░╚═╝░╚═════╝░╚═════╝░╚═════╝░]]
-
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░  ╚═╝░░╚═╝░╚═════╝░╚═════╝░╚═════╝░
+]]
 local HUB = Window:MakeTab({
 	Name = "Script Hubs",
 	Icon = "rbxassetid://4483345998",
@@ -455,7 +469,6 @@ local Section = HUB:AddSection({
 })
 
 
-
 -- Shark Bite
 local Section = HUB:AddSection({
 	Name = "Shark Bite LOOF-sys"
@@ -547,16 +560,17 @@ Other:AddButton({
 
 -- TELEPORT TO MY TEST GAME
 if Player.UserId == 1201621667 then
-	local Section = Other:AddSection({
-		Name = "Teleport to Test IDK"
-	})
-	Other:AddButton({
-		Name = "Teleport (Test IDK)",
-		Callback = function()
-				  Teleport()
-		  end    
-	})
-	end
+local Section = Other:AddSection({
+	Name = "Teleport to Test IDK"
+})
+Other:AddButton({
+	Name = "Teleport (Test IDK)",
+	Callback = function()
+      		Teleport()
+  	end    
+})
+end
+
 
 
 -- RANDOM IGNORE
@@ -588,20 +602,89 @@ Other:AddDropdown({
 
 
 
---[[
-██╗███╗░░██╗███████╗░█████╗░
-██║████╗░██║██╔════╝██╔══██╗
-██║██╔██╗██║█████╗░░██║░░██║
-██║██║╚████║██╔══╝░░██║░░██║
-██║██║░╚███║██║░░░░░╚█████╔╝
-╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
 
-local Info = Window:MakeTab({
-	Name = "information",
+
+--[[
+░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░]]
+
+local Settings = Window:MakeTab({
+	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
+
+
+Settings:AddParagraph("Settings","Settings are currenty not working (under review)")
+local Section = Settings:AddSection({
+	Name = "Settings"
+})
+
+
+-- Transparancy
+Settings:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Transparancy",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+-- COLOUR PICKER
+Settings:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+--Keybind For Ui
+Settings:AddBind({
+	Name = "Off/On",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+		print("NOT WORKING: currently under review")
+	end    
+})
+
+
+Settings:AddDropdown({
+	Name = "Setting",
+	Default = "1",
+	Options = {"1", "2", "3", "4"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+local Section = Settings:AddSection({
+	Name = "Destroy GUI"
+})
+Settings:AddButton({
+	Name = "Destroy",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+
+
+
+
+
+
 
 
 
@@ -614,7 +697,7 @@ Info:AddParagraph("Information","Currently in Alpha, mostly messing around with 
 
 
 OrionLib:Init()
-
+OrionLib:Destroy()
 
 
 
@@ -688,107 +771,5 @@ OrionLib:Init()
 ]]
 
 function niggaHub()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
-local Nigga = Window:MakeTab({
-	Name = "Nigga Hub Faggot Monkey",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+	game.Players.LocalPlayer:Kick(Nigga you are obsessed with digs kill yourself)
 end
-
-
--- DA HOOD legit looking silent aim
-function Dahood()
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/howyougetcracked/speed/main/silent"))()
-Aiming.TeamCheck(false)
-
-local Workspace = game:GetService("Workspace")
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-
-local LocalPlayer = Players.LocalPlayer
-local Mouse = LocalPlayer:GetMouse()
-local CurrentCamera = Workspace.CurrentCamera
-
-local DaHoodSettings = {
-    SilentAim = true,
-    Prediction = 0.157,
-    
-}
-getgenv().DaHoodSettings = DaHoodSettings
-
-function Aiming.Check()
-    if not (Aiming.Enabled == true and Aiming.Selected ~= LocalPlayer and Aiming.SelectedPart ~= nil) then
-        return false
-    end
-
-    local Character = Aiming.Character(Aiming.Selected)
-    local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
-    local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
-
-    if (KOd or Grabbed) then
-        return false
-    end
-
-    return true
-end
-
-local __index
-__index = hookmetamethod(game, "__index", function(t, k)
-    if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and Aiming.Check()) then
-        local SelectedPart = Aiming.SelectedPart
-
-        if (DaHoodSettings.SilentAim and (k == "Hit" or k == "Target")) then
-            local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
-
-            return (k == "Hit" and Hit or SelectedPart)
-        end
-    end
-
-    return __index(t, k)
-end)
-
-RunService:BindToRenderStep("AimLock", 0, function()
-    if (DaHoodSettings.AimLock and Aiming.Check() and UserInputService:IsKeyDown(DaHoodSettings.AimLockKeybind)) then
-        local SelectedPart = Aiming.SelectedPart
-
-        local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
-
-        CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
-    end
-    end) 
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-OrionLib:Destroy()
