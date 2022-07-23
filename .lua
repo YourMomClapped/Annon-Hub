@@ -130,17 +130,22 @@ end)
 end
 
 
----------------------- FUNCTION REMOTE SPY HYPE ----------------
-function remote()
-	local owner = "Upbolt"
-local branch = "revision"
+------------------ Music Player ----------------
+function MusicPlayer()
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
 
-local function webImport(file)
-    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
-end
+local win = SolarisLib:New({
+  Name = "music gui",
+  FolderToSave = "sliperLoader"
+})
 
-webImport("init")
-webImport("ui/main")
+local tab = win:Tab("Games")
+
+local idiot = tab:Section("idiot")
+
+local label = idiot:Label("gui was made by cjk#3973")
+
+local label = idiot:Label("if you see a ... click on it then there")
 end
 
 
@@ -240,11 +245,9 @@ local Section = Main:AddSection({
 Main:AddButton({
 	Name = "Remote Spy",
 	Callback = function()
-      		remote()
-			  loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+      		loadstring(game:httpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
-
 
 -- Dark Dex
 Main:AddButton({
@@ -341,6 +344,22 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 		Name = "Build a boat: Infinite Blocks",
 		Callback = function()
 				  infiniteBlocks()
+		  end    
+	})
+
+	local Section = Scripts:AddSection({
+		Name = "Music Player"
+	})
+	Scripts:AddButton({
+		Name = "Music Player (Player Roblox Ids)",
+		Callback = function()
+				  MusicPlayer()
+		  end    
+	})
+	Scripts:AddButton({
+		Name = "Play Spotify Music",
+		Callback = function()
+			loadstring(game:HttpGet('https://pastebin.com/raw/dcim7NHX'))()
 		  end    
 	})
 
