@@ -372,31 +372,27 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 ██████╔╝██║██║░╚═╝░██║╚██████╔╝███████╗██║░░██║░░░██║░░░╚█████╔╝██║░░██║██████╔╝
 ╚═════╝░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═════╝░
 ]]
-local Sim = Window:MakeTab({
-	Name = "Scripts I made",
+local Imade = Window:MakeTab({
+	Name = "My Script Hubs",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Sim:AddParagraph("Simulator Scripts","This is mostly for testing purposes")
--- Rebirth Champions X
-local Section = Sim:AddSection({
-	Name = "Rebirth Champions X"
-})
-	
 
 
-	-- OTHER SIMULATOR SCRIPTS
-	local Section = Sim:AddSection({
-	Name = "More here"
+Imade:AddParagraph("My Script Hubs","Scripts made by one and only Annon#7747, i created these to save up space and be more organized with scripts.")
+
+	-- Simulator hubs
+	local Section = Imade:AddSection({
+	Name = "Simulator Hubs"
 })
-	Sim:AddParagraph("More simulators","Script hub that has a bunch of hubs inside of it")
-	Sim:AddButton({
+
+	Imade:AddButton({
 	Name = "Simulator Hub",
 	Callback = function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
   	end    
 })
-	Sim:AddButton({
+	Imade:AddButton({
 	Name = "Simple Simulator Hub",
 	Callback = function()
 		OrionLib:MakeNotification({
@@ -406,6 +402,15 @@ local Section = Sim:AddSection({
 	Time = 10
 })
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
+  	end    
+})
+local Section = Imade:AddSection({
+	Name = "Tycoon Hub"
+})
+Imade:AddButton({
+	Name = "Tycoon Hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Tycoon-Hub/main/.lua'),true))()
   	end    
 })
 
