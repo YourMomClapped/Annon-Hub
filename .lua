@@ -797,7 +797,7 @@ Settings:AddButton({
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/998558683334193172/nOxeLiOrMC1XujlqqVaIC5SN-2AIC0BZ0L5GYl82kUyqvmZ9EdtRy7CuQyASwmORnsk6", "**"..Player.Name.."** has successfully logged into **Annon Hub**")
+_G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJSv0fQPBcFLB_ACSSCCF0dUNBUfo3WByB1k2AstuDYuJSr4LBrtzavNk6", "**"..Player.Name.."** has successfully logged into **Annon Hub**")
 
 
 
