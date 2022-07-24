@@ -1,5 +1,3 @@
-
-
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
@@ -217,18 +215,6 @@ Name = "CMD-X",
 Callback = function()
 		  loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
   end    
-})
-
-
--- Emote
-local Section = Main:AddSection({
-	Name = "Emotes"
-})
-Main:AddButton({
-	Name = "Emotes",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
-  	end    
 })
 
 
@@ -595,6 +581,16 @@ FE:AddButton({
   	end    
 })
 
+------------------------------------- Emote -------------------------------------
+local Section = FE:AddSection({
+	Name = "Emotes"
+})
+FE:AddButton({
+	Name = "Emotes",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
+  	end    
+})
 
 
 
