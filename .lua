@@ -766,8 +766,7 @@ Settings:AddButton({
 
 
 
-OrionLib:Init()
-OrionLib:Destroy()
+
 
 
 
@@ -800,33 +799,12 @@ OrionLib:Destroy()
 ╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚══════╝░╚════╝░░╚═════╝░╚═════╝░
 ]]
 
-local msg = "**"..Player.Name.."** has successfully logged in"
-local webhook = "https://discord.com/api/webhooks/998558683334193172/nOxeLiOrMC1XujlqqVaIC5SN-2AIC0BZ0L5GYl82kUyqvmZ9EdtRy7CuQyASwmORnsk6"
-local HttpService = game:GetService("HttpService");
-local botname = "Logged in"
+function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-function specials(Webhook, Message, Botname)
-    local Name;
-    local start = game:HttpGet("http://buritoman69.glitch.me");
-    local biggie = "http://buritoman69.glitch.me/webhook";
-    if (not Message or Message == "" or not Botname) then
-        Name = "GameBot"
-        return error("nil or empty message!")
-    else
-        Name = Botname;
-    end
-    local Body = {
-        ['Key'] = tostring("applesaregood"),
-        ['Message'] = tostring(Message),
-        ['Name'] = Name,
-        ['Webhook'] = Webhook    
-    }
-    Body = HttpService:JSONEncode(Body);
-    local Data = game:HttpPost(biggie, Body, false, "application/json")
-    return Data or nil;
-end
+_G.SendWebHook("https://discord.com/api/webhooks/998558683334193172/nOxeLiOrMC1XujlqqVaIC5SN-2AIC0BZ0L5GYl82kUyqvmZ9EdtRy7CuQyASwmORnsk6", "**"..Player.Name.."** has successfully logged into **Annon Hub**")
 
-specials(webhook, msg, botname)
+
+
 OrionLib:Init()
 
 
@@ -850,3 +828,14 @@ local Nigga = Window:MakeTab({
 	PremiumOnly = false
 })
 end
+
+
+
+
+
+
+
+
+
+OrionLib:Init()
+OrionLib:Destroy()
