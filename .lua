@@ -517,7 +517,7 @@ HUB:AddButton({
 HUB:AddDropdown({
 	Name = "Games Proxima Hub Supports",
 	Default = "Tapping Legends X",
-	Options = {"Rebirth Champions X", "Anime Journey", "Ninja Legends", "Gun Simulator", "Legends Of Speed", "Destruction Simulator", "Saber Simulator", "Tower Of Hell", "Lucky Block", "Horrific Housing", "Anime Sword Simulator", "Kick Off", "Givenchy Beauty House", "Tommy Play", "Gucci Town", "Broken Bones Simulator", "Tate McRae Concert Experienc", "Samsung Superstar Galaxy", "Spotify Island", "Logitech Song Breaker Awards", "Alo Sanctuary", "Beatland", "Clicker Madness", "Roblox Pro League"},
+	Options = {"[+] Rebirth Champions X", "[+] Anime Journey", "[+] Ninja Legends", "[+] Gun Simulator", "[+] Legends Of Speed", "[+] Destruction Simulator", "[+] Saber Simulator", "[+] Tower Of Hell", "[+] Lucky Block", [+] "Horrific Housing", "[+] Anime Sword Simulator", "[+] Kick Off", "[+] Givenchy Beauty House", "[+] Tommy Play", "[+] Gucci Town", "[+] Broken Bones Simulator", "[+] Tate McRae Concert Experienc", "[+] Samsung Superstar Galaxy", "[+] Spotify Island", "[+] Logitech Song Breaker Awards", "[+] Alo Sanctuary", "Beatland", "[+] Clicker Madness", "[+] Roblox Pro League"},
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -637,7 +637,7 @@ HUB:AddButton({
 HUB:AddDropdown({
 	Name = "Games Ultra Hub supports",
 	Default = "Mining Clicker Simulator",
-	Options = {"Mining Clicker Simulator", "Tapping Simulator", "Strong Simulator", "Pet Posse", "Firework Simulator", "Weapon Fighting Simulator", "Sonic Speed Simulator", "Sword Simulator", "Actor Tycoon Loader", "Mining Simularo", "Magic Simulator", "Ninja Training Simulator", "Pet Simlator X"},
+	Options = {"[+] Mining Clicker Simulator", "[+] Tapping Simulator", "[+] Strong Simulator", "[+] Pet Posse", "[+] Firework Simulator", "[+] Weapon Fighting Simulator", "[+] Sonic Speed Simulator", "[+] Sword Simulator", "[+] Actor Tycoon Loader", "[+] Mining Simularo", "[+] Magic Simulator", "[+] Ninja Training Simulator", "[+] Pet Simlator X"},
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -674,7 +674,7 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 	Scripts:AddDropdown({
 		Name = "Build a boat features",
 		Default = "1",
-		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
+		Options = {"[+] Copy players builds", "[+] auto build (File)", "[+] Preview file build", "[+] List blocks", "[+] Safe Mode"},
 		Callback = function(Value)
 			print(Value)
 		end    
