@@ -326,7 +326,6 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 
 
 -------------------------------- Build A Boat --------------------------------
-Build a boat
 	local Section = Scripts:AddSection({
 		Name = "Build a boat"
 	})
