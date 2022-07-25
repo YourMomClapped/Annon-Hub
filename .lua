@@ -624,6 +624,25 @@ HUB:AddButton({
   	end    
 })
 
+-------------------------------- Ultra Hub --------------------------------
+local Section = HUB:AddSection({
+	Name = "Ultra Hub"
+})
+HUB:AddButton({
+	Name = "Ultra Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+  	end    
+})
+HUB:AddDropdown({
+	Name = "Games Ultra Hub supports",
+	Default = "Mining Clicker Simulator",
+	Options = {"Mining Clicker Simulator", "Tapping Simulator", "Strong Simulator", "Pet Posse", "Firework Simulator", "Weapon Fighting Simulator", "Sonic Speed Simulator", "Sword Simulator", "Actor Tycoon Loader", "Mining Simularo", "Magic Simulator", "Ninja Training Simulator", "Pet Simlator X"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
 
 
 --[[
