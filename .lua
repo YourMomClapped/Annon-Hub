@@ -19,7 +19,7 @@ OrionLib:MakeNotification({
 	Time = 5
 	})
 
--- ERROR 404 Dark Dex
+-------------------------------- ERROR 404 Dark Dex --------------------------------
 function dark()
 OrionLib:MakeNotification({
 	Name = "ERROR: 404",
@@ -30,7 +30,7 @@ OrionLib:MakeNotification({
 	end
 
 
--- DESTROY UI
+-------------------------------- DESTROY UI --------------------------------
 function DestroyUI()
 OrionLib:MakeNotification({
 	Name = "Title!",
@@ -72,11 +72,11 @@ _G.niggaHub = "Dog Hub :)"
 █████╗░░██║░░░██║██╔██╗██║██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░
 ██╔══╝░░██║░░░██║██║╚████║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
 ██║░░░░░╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
-╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
+╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░]]
 
 
---Tapping Legends X
--- Functions Auto Clicker                         ]]
+-------------------------------- Tapping Legends X --------------------------------
+-------------------------------- Functions Auto Clicker --------------------------------
 function autoClicker()
 while _G.autoClicker == true do
    game:GetService("ReplicatedStorage").Events.Click3:FireServer()
@@ -85,7 +85,7 @@ end
 end
 
 
--- Function Auto Rebirth
+-------------------------------- Function Auto Rebirth --------------------------------
 function autoRebirth()
 while _G.autoRebirth == true do
    game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(40)
@@ -94,7 +94,7 @@ end
 end
 
 
--- Function Egg Hatch 
+-------------------------------- Function Egg Hatch --------------------------------
 function autoEgg()
 while _G.autoEgg == true do
    game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("Kraken","Triple")
@@ -103,7 +103,7 @@ end
 end
 	
 
--- Function Egg hatch (better egg)
+-------------------------------- Function Egg hatch (better egg) --------------------------------
 function autoHatch()
 while _G.autoHatch == true do
    game:GetService("ReplicatedStorage").Functions.Unbox:InvokeServer("SpaceLab","Triple")
@@ -111,7 +111,7 @@ while _G.autoHatch == true do
 end
 end
 
---------Build A Boat infinite blocks
+-------------------------------- Build A Boat infinite blocks --------------------------------
 function infiniteBlocks()
 	_G.RUN = true
 spawn(function()
@@ -180,7 +180,7 @@ local MainSection = Main:AddSection({
 	Name = "Main"
 })
 
-  -- Infinite Yield --
+  -------------------------------- Infinite Yield --------------------------------
 Main:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
@@ -189,7 +189,7 @@ Main:AddButton({
 })
 
 
--- Owl Hub
+-------------------------------- Owl Hub --------------------------------
 	Main:AddButton({
 	Name = "Owl Hub",
 	Callback = function()
@@ -197,7 +197,7 @@ Main:AddButton({
   	end    
 })
 
-  -- Silent Aim --
+  -------------------------------- Silent Aim --------------------------------
 Main:AddButton({
 	Name = "Universial",
 	Callback = function()
@@ -205,7 +205,7 @@ Main:AddButton({
   	end    
 })
 
--- CMD X MAIN SCRIPT
+-------------------------------- CMD X MAIN SCRIPT --------------------------------
 local Section = Main:AddSection({
 	Name = "Cmd X"
 })
@@ -218,7 +218,7 @@ Callback = function()
 })
 
 
--- Chat Spoofer -
+-------------------------------- Chat Spoofer --------------------------------
 local Section = Main:AddSection({
 	Name = "Chat Spoofer"
 })
@@ -236,13 +236,13 @@ Main:AddButton({
 })
 
 
--- FOR MAKING SCRIPTS
+-------------------------------- FOR MAKING SCRIPTS --------------------------------
 local Section = Main:AddSection({
 	Name = "Scripting"
 })
 
 
--- Remote Spy
+-------------------------------- Remote Spy --------------------------------
 Main:AddButton({
 	Name = "Remote Spy",
 	Callback = function()
@@ -251,7 +251,7 @@ Main:AddButton({
   	end    
 })
 
--- Dark Dex
+-------------------------------- Dark Dex --------------------------------
 Main:AddButton({
 	Name = "Dark Dex (NOT WORKING)",
 	Callback = function()
@@ -259,7 +259,7 @@ Main:AddButton({
   	end    
 })
 
--- Prison Life
+-------------------------------- Prison Life --------------------------------
 if game.PlaceId == 155615604 then
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
@@ -271,7 +271,7 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
 	Name = "Prison Life Scripts"
 })
 	
-	-- Prison Life Gun Spawner --
+	-------------------------------- Prison Life Gun Spawner --------------------------------
 	Prison:AddButton({
 	Name = "GunSpawner",
 	Callback = function()
@@ -279,7 +279,7 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
   	end    
 })
 	
-	-- Prison Life Admin --
+	-------------------------------- Prison Life Admin --------------------------------
 	Prison:AddButton({
 	Name = "Prison life Admin",
 	Callback = function()
@@ -325,6 +325,8 @@ local Scripts = Window:MakeTab({
 Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
 
 
+-------------------------------- Build A Boat --------------------------------
+Build a boat
 	local Section = Scripts:AddSection({
 		Name = "Build a boat"
 	})
@@ -348,7 +350,9 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 				  infiniteBlocks()
 		  end    
 	})
+ 
 
+-------------------------------- Music Player --------------------------------
 	local Section = Scripts:AddSection({
 		Name = "Music Player"
 	})
@@ -407,6 +411,7 @@ Imade:AddParagraph("My Script Hubs","Scripts made by one and only Annon#7747, i 
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
   	end    
 })
+-------------------------------- Tycoon Hub --------------------------------
 local Section = Imade:AddSection({
 	Name = "Tycoon Hub"
 })
@@ -434,7 +439,7 @@ local HUB = Window:MakeTab({
 HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
 
 
--- GUN SIMULATOR
+-------------------------------- GUN SIMULATOR --------------------------------
 local Section = HUB:AddSection({
 	Name = "Proxima Hub"
 })
@@ -454,7 +459,7 @@ HUB:AddDropdown({
 })
 
 
--- Space X
+-------------------------------- Space X --------------------------------
 local Section = HUB:AddSection({
 	Name = "Space X"
 })
@@ -474,7 +479,7 @@ HUB:AddDropdown({
 })
 
 
--- Frozen Hub
+-------------------------------- Frozen Hub --------------------------------
 local Section = HUB:AddSection({
 	Name = "Frozen Hub"
 })
@@ -486,7 +491,7 @@ HUB:AddButton({
 })
 
 
--- Rebirth Champions X HUB
+-------------------------------- Rebirth Champions X HUB --------------------------------
     local Section = HUB:AddSection({
 	Name = "Rebirth Champions X HUB"
 })
@@ -498,7 +503,7 @@ HUB:AddButton({
 })
 
 
--- Domain X
+-------------------------------- Domain X --------------------------------
     local Section = HUB:AddSection({
 	Name = "Domain X"
 })
@@ -511,7 +516,7 @@ HUB:AddButton({
 })
 
 
--- Nullware Hub V3
+-------------------------------- Nullware Hub V3 --------------------------------
 local Section = HUB:AddSection({
 	Name = "Nullware Hub V3"
 })
@@ -525,7 +530,7 @@ local Section = HUB:AddSection({
 })
 
 
--- Shark Bite
+-------------------------------- Shark Bite --------------------------------
 local Section = HUB:AddSection({
 	Name = "Shark Bite LOOF-sys"
 })
@@ -557,7 +562,7 @@ local FE = Window:MakeTab({
 	PremiumOnly = false
 })
 
--- Pendulum Hub
+-------------------------------- Pendulum Hub --------------------------------
 local Section = FE:AddSection({
 	Name = "Pendulum Hub"
 })
@@ -611,7 +616,7 @@ Other:AddParagraph("Other","Mostly scripts ill probably use in the future or int
 
 
 
--- Log Player Information
+-------------------------------- Log Player Information --------------------------------
 local Section = Other:AddSection({
 	Name = "Player Logger"
 })
@@ -624,7 +629,7 @@ Other:AddButton({
 })
 
 
--- TELEPORT TO MY TEST GAME
+-------------------------------- TELEPORT TO MY TEST GAME --------------------------------
 if Player.UserId == 1201621667 then
 local Section = Other:AddSection({
 	Name = "Teleport to Test IDK"
@@ -639,7 +644,7 @@ end
 
 
 
--- RANDOM IGNORE
+-------------------------------- RANDOM IGNORE --------------------------------
 local Section = Other:AddSection({
 	Name = "Section"
 })
@@ -691,7 +696,7 @@ local Section = Settings:AddSection({
 })
 
 
--- Transparancy
+-------------------------------- Transparancy --------------------------------
 Settings:AddSlider({
 	Name = "Slider",
 	Min = 0,
@@ -706,7 +711,7 @@ Settings:AddSlider({
 })
 
 
--- COLOUR PICKER
+-------------------------------- COLOUR PICKER --------------------------------
 Settings:AddColorpicker({
 	Name = "Colorpicker",
 	Default = Color3.fromRGB(255, 0, 0),
@@ -716,7 +721,7 @@ Settings:AddColorpicker({
 })
 
 
---Keybind For Ui
+-------------------------------- Keybind For Ui --------------------------------
 Settings:AddBind({
 	Name = "Off/On",
 	Default = Enum.KeyCode.E,
