@@ -40,6 +40,44 @@ OrionLib:MakeNotification({
 })
 end
 
+------------------------------ Inject Tycoon Hub
+function InjectTycoon()
+	OrionLib:MakeNotification({
+		Name = "Injecting",
+		Content = "Injecting Tycoon Hub.",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+		})
+	end
+--------------------------- Inject FE ScriptHub ----------------------
+function InjectFE()
+OrionLib:MakeNotification({
+	Name = "Injecting",
+	Content = "Injecting FE ScriptHub.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+	})
+end
+
+------------------------- Inject Simple Simulator Hub ----------------------
+function InjectSimple()
+OrionLib:MakeNotification({
+	Name = "Injecting",
+	Content = "Injecting Simple Simulator.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+	})
+end
+
+--------------------------- Injecting Simulator Hub -----------------------------
+function InjectSimulator()
+OrionLib:MakeNotification({
+	Name = "Injecting",
+	Content = "Injecting Simulator Hub.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+	})
+end
 
 
 
@@ -159,6 +197,93 @@ webImport("ui/main")
 end
 
 
+------------------------------------ Crosswoods safty ------------------------------------
+function safe()
+local Module_Scripts = {}
+local Part = Instance.new("Part")
+local LocalScript = Instance.new("LocalScript")
+
+
+Part.Anchored = true
+Part.BottomSurface = Enum.SurfaceType.Smooth
+Part.BrickColor = BrickColor.new([[Bright green]])
+Part.CFrame = CFrame.new(9999, 50, 9999, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part.Color = Color3.new(0.294118, 0.592157, 0.294118)
+Part.Material = Enum.Material.Grass
+Part.Parent = workspace
+Part.Position = Vector3.new(9999, 50, 9999)
+Part.Size = Vector3.new(100, 1, 100)
+Part.TopSurface = Enum.SurfaceType.Smooth
+
+function LocalScript_ScriptfakeXD()
+
+	local script = Instance.new("LocalScript",Part)
+	LocalScript = script
+	script.Name = [[LocalScript]]	
+	local require_fake = require
+	local require = function(Object)
+		local functiom = Module_Scripts[Object]
+		if functiom then
+			return functiom()
+		end
+		return require_fake(Object)
+	end
+	local safe = false
+	
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+		if key == "k" then
+			if safe == false then
+				_G.pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+				safe = true
+				game.Players.LocalPlayer.Character:MoveTo(script.Parent.Position + Vector3.new(0,3,0))
+			else
+				safe = false
+				game.Players.LocalPlayer.Character:MoveTo(_G.pos)
+			end
+			
+		end
+	end)
+
+end
+coroutine.wrap(LocalScript_ScriptfakeXD)()
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------- RANDOM IGNORE --------------------------------
+local Profile = Window:MakeTab({
+	Name = "Profile",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Profile:AddSection({
+	Name = "Information"
+})
+Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
+local Section = Profile:AddSection({
+	Name = "Profile"
+})
+Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW")
+local Section = Profile:AddSection({
+	Name = "Whats Annon Hub for"
+})
+Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS")
 
 
 
@@ -292,81 +417,6 @@ end
 
 
 
---[[
-██╗███╗░░██╗███████╗░█████╗░
-██║████╗░██║██╔════╝██╔══██╗
-██║██╔██╗██║█████╗░░██║░░██║
-██║██║╚████║██╔══╝░░██║░░██║
-██║██║░╚███║██║░░░░░╚█████╔╝
-╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░]]
-
-local Info = Window:MakeTab({
-	Name = "Information",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Info:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
-
-
-
---[[
-░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
-██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
-░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
-██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
-╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
-
-local Scripts = Window:MakeTab({
-	Name = "Scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
-
-
--------------------------------- Build A Boat --------------------------------
-	local Section = Scripts:AddSection({
-		Name = "Build a boat"
-	})
-	Scripts:AddButton({
-		Name = "Build A Boat",
-		Callback = function()
-				  
-		  end    
-	})
-	Scripts:AddDropdown({
-		Name = "Build a boat features",
-		Default = "1",
-		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
-		Callback = function(Value)
-			print(Value)
-		end    
-	})
-	Scripts:AddButton({
-		Name = "Build a boat: Infinite Blocks",
-		Callback = function()
-				  infiniteBlocks()
-		  end    
-	})
- 
-
--------------------------------- Music Player --------------------------------
-	local Section = Scripts:AddSection({
-		Name = "Music Player"
-	})
-	Scripts:AddButton({
-		Name = "Music Player (Player Roblox Ids)",
-		Callback = function()
-				  MusicPlayer()
-		  end    
-	})
-	Scripts:AddButton({
-		Name = "Play Spotify Music",
-		Callback = function()
-			loadstring(game:HttpGet('https://pastebin.com/raw/dcim7NHX'))()
-		  end    
-	})
 
 
 --[[
@@ -395,18 +445,16 @@ Imade:AddParagraph("My Script Hubs","Scripts made by one and only Annon#7747, i 
 	Imade:AddButton({
 	Name = "Simulator Hub",
 	Callback = function()
+		InjectSimulator()
+		wait(1)
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Simulators/main/.lua')))()
   	end    
 })
 	Imade:AddButton({
 	Name = "Simple Simulator Hub",
 	Callback = function()
-		OrionLib:MakeNotification({
-	Name = "Attached script",
-	Content = "Welcome to Simple Hub "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})
+		InjectSimple()
+		wait(1)
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Simulator-Script/main/.lua"))()
   	end    
 })
@@ -417,9 +465,27 @@ local Section = Imade:AddSection({
 Imade:AddButton({
 	Name = "Tycoon Hub",
 	Callback = function()
+		InjectTycoon()
+		wait(1)
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Tycoon-Hub/main/.lua'),true))()
   	end    
 })
+
+------------------------- FE ScriptHub -------------------------
+local Section = Imade:AddSection({
+	Name = "FE ScriptHub"
+})
+Imade:AddButton({
+	Name = "FE ScriptHub",
+	Callback = function()
+		InjectFE()
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Fe-ScriptHub/main/.lua", true))()
+  	end    
+})
+
+
+
 
 
 --[[
@@ -477,6 +543,18 @@ HUB:AddDropdown({
 	end    
 })
 
+-------------------------------- Pendulum Hub --------------------------------
+local Section = HUB:AddSection({
+	Name = "Pendulum Hub"
+})
+HUB:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
+HUB:AddButton({
+	Name = "Pendulum Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+
+  	end    
+})
 
 -------------------------------- Frozen Hub --------------------------------
 local Section = HUB:AddSection({
@@ -547,54 +625,71 @@ HUB:AddButton({
 })
 
 
---[[
-███████╗███████╗  ░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
-██╔════╝██╔════╝  ██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-█████╗░░█████╗░░  ╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
-██╔══╝░░██╔══╝░░  ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
-██║░░░░░███████╗  ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
-╚═╝░░░░░╚══════╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
 
-local FE = Window:MakeTab({
-	Name = "FE Scripts",
+--[[
+░██████╗░█████╗░██████╗░██╗██████╗░████████╗░██████╗
+██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░╚█████╗░
+░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
+██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
+
+local Scripts = Window:MakeTab({
+	Name = "Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
 
--------------------------------- Pendulum Hub --------------------------------
-local Section = FE:AddSection({
-	Name = "Pendulum Hub"
-})
-FE:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
-FE:AddButton({
-	Name = "Pendulum Hub",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 
-  	end    
-})
+-------------------------------- Build A Boat --------------------------------
+	local Section = Scripts:AddSection({
+		Name = "Build a boat"
+	})
+	Scripts:AddButton({
+		Name = "Build A Boat",
+		Callback = function()
+				  
+		  end    
+	})
+	Scripts:AddDropdown({
+		Name = "Build a boat features",
+		Default = "1",
+		Options = {"Copy players builds", "auto build (File)", "Preview file build", "List blocks", "Safe Mode"},
+		Callback = function(Value)
+			print(Value)
+		end    
+	})
+	Scripts:AddButton({
+		Name = "Build a boat: Infinite Blocks",
+		Callback = function()
+				  infiniteBlocks()
+		  end    
+	})
+ 
 
--- FE SCRIPT
-local Section = FE:AddSection({
-	Name = "Fe Script"
-})
-FE:AddButton({
-	Name = "FE SCRIPT (DONT USE YET NOT SAFE)",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
-  	end    
-})
+-------------------------------- Music Player --------------------------------
+	local Section = Scripts:AddSection({
+		Name = "Music Player"
+	})
+	Scripts:AddButton({
+		Name = "Music Player (Player Roblox Ids)",
+		Callback = function()
+				  MusicPlayer()
+		  end    
+	})
+	Scripts:AddButton({
+		Name = "Play Spotify Music",
+		Callback = function()
+			loadstring(game:HttpGet('https://pastebin.com/raw/dcim7NHX'))()
+		  end    
+	})
 
-------------------------------------- Emote -------------------------------------
-local Section = FE:AddSection({
-	Name = "Emotes"
-})
-FE:AddButton({
-	Name = "Emotes",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua", true))()
-  	end    
-})
+
+
+
+
+
 
 
 
@@ -643,14 +738,8 @@ end
 
 
 
--------------------------------- RANDOM IGNORE --------------------------------
-local Section = Other:AddSection({
-	Name = "Section"
-})
-Other:AddParagraph("Profile","Annon Hub iS the best hub ofc ;) made by Annon#7747 UwW")
-local Section = Other:AddSection({
-	Name = "Whats Annon Hub For"
-})
+
+
 
 Other:AddParagraph("Choose one","Choose one slider then click this button one of the sliders will create a special script hub")
 Other:AddDropdown({
@@ -667,6 +756,18 @@ Other:AddDropdown({
 				niggaHub()
       		end    
   end
+})
+
+-------------------------------- Crosswoods safty --------------------------------
+local Section = Other:AddSection({
+	Name = "Safty"
+})
+
+Other:AddButton({
+	Name = "Crosswoods safty (Cannot get temp banned)",
+	Callback = function()
+      		Safe()
+  	end    
 })
 
 
@@ -693,6 +794,7 @@ Settings:AddParagraph("Settings","Settings are currenty not working (under revie
 local Section = Settings:AddSection({
 	Name = "Settings"
 })
+
 
 
 -------------------------------- Transparancy --------------------------------
@@ -748,6 +850,7 @@ Settings:AddButton({
       		OrionLib:Destroy()
   	end    
 })
+
 
 
 
