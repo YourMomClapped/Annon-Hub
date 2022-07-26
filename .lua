@@ -94,6 +94,8 @@ _G.autoHatch = true -- Tapping Legends X
 _G.sliderString = "string" -- slider string
 _G.niggaHub = "Dog Hub :)"
 
+--------------- Game teleport ---------------------
+_G.TeleportString = "string"
 
 
 
@@ -105,6 +107,18 @@ _G.niggaHub = "Dog Hub :)"
 ██╔══╝░░██║░░░██║██║╚████║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
 ██║░░░░░╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
 ╚═╝░░░░░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░]]
+
+
+
+------------------------------- Teleport to Test IDK
+function gameTeleport()
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+ 
+local placeId = _G.TeleportString
+ 
+TeleportService:Teleport(placeId)
+end
 
 
 -------------------------------- Tapping Legends X --------------------------------
@@ -260,8 +274,14 @@ end
 
 
 
+--[[
+██████╗░██████╗░░█████╗░███████╗██╗██╗░░░░░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██║██║░░░░░██╔════╝
+██████╔╝██████╔╝██║░░██║█████╗░░██║██║░░░░░█████╗░░
+██╔═══╝░██╔══██╗██║░░██║██╔══╝░░██║██║░░░░░██╔══╝░░
+██║░░░░░██║░░██║╚█████╔╝██║░░░░░██║███████╗███████╗
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝╚══════╝]]
 
--------------------------------- RANDOM IGNORE --------------------------------
 local Profile = Window:MakeTab({
 	Name = "Profile",
 	Icon = "rbxassetid://4483345998",
@@ -280,6 +300,26 @@ local Section = Profile:AddSection({
 })
 Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
+
+------------------------------ JOIN GAME ------------------------------------
+local Section = Profile:AddSection({
+	Name = "Game Teleport"
+})
+Profile:AddParagraph("Join a game","Click the numbers blow the game name EXAMPLE: if i want to join ''[+] My Test Game ⬇'' i click ''4632363497''.")
+Profile:AddDropdown({
+	Name = "Choose game",
+	Default = "Pick A Game",
+	Options = {"Pick A Game", "[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
+	Callback = function(Value)
+		_G.TeleportString = Value
+	end    
+})
+Profile:AddButton({
+	Name = "Join Game",
+	Callback = function()
+      		gameTeleport()
+  	end    
+})
 
 
 
@@ -843,6 +883,7 @@ Settings:AddParagraph("Settings","Settings are currenty not working (under revie
 local Section = Settings:AddSection({
 	Name = "Settings"
 })
+
 
 
 
