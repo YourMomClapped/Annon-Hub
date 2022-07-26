@@ -517,7 +517,7 @@ HUB:AddButton({
 HUB:AddDropdown({
 	Name = "Games Proxima Hub Supports",
 	Default = "Tapping Legends X",
-	Options = {"[+] Rebirth Champions X", "[+] Anime Journey", "[+] Ninja Legends", "[+] Gun Simulator", "[+] Legends Of Speed", "[+] Destruction Simulator", "[+] Saber Simulator", "[+] Tower Of Hell", "[+] Lucky Block", [+] "Horrific Housing", "[+] Anime Sword Simulator", "[+] Kick Off", "[+] Givenchy Beauty House", "[+] Tommy Play", "[+] Gucci Town", "[+] Broken Bones Simulator", "[+] Tate McRae Concert Experienc", "[+] Samsung Superstar Galaxy", "[+] Spotify Island", "[+] Logitech Song Breaker Awards", "[+] Alo Sanctuary", "Beatland", "[+] Clicker Madness", "[+] Roblox Pro League"},
+	Options = {"[+] Rebirth Champions X", "[+] Anime Journey", "[+] Ninja Legends", "[+] Gun Simulator", "[+] Legends Of Speed", "[+] Destruction Simulator", "[+] Saber Simulator", "[+] Tower Of Hell", "[+] Lucky Block", "[+] Horrific Housing", "[+]Anime Sword Simulator", "[+] Kick Off", "[+] Givenchy Beauty House", "[+] Tommy Play", "[+] Gucci Town", "[+] Broken Bones Simulator", "[+] Tate McRae Concert Experienc", "[+] Samsung Superstar Galaxy", "[+] Spotify Island", "[+] Logitech Song Breaker Awards", "[+] Alo Sanctuary", "Beatland", "[+] Clicker Madness", "[+] Roblox Pro League"},
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -643,6 +643,36 @@ HUB:AddDropdown({
 	end    
 })
 
+------------------------------- His Script Hub -------------------------------
+local Section = HUB:AddSection({
+	Name = "Choppa Hub"
+})
+HUB:AddButton({
+	Name = "Choppa Hub (DONT TRUST 100%)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TayKIsMyDad/script-hub/main/Main", true))()
+  	end    
+})
+HUB:AddDropdown({
+	Name = "Games Choppa Hub supports",
+	Default = "Click Me",
+	Options = {"[+] Phantom Forces", "[+] Hoops Life", "[+] Infinite Yield", "[+] Prison Life Remastered (Broken)", "[+] Universal Aimbot (Aimware)", "[+] Jailbird"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 --[[
@@ -706,6 +736,23 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 
 
 
+------------------------------- Guess How Much -------------------------------
+local Section = Scripts:AddSection({
+	Name = "Guess How Many"
+})
+Scripts:AddButton({
+	Name = "Guess Script",
+	Callback = function()
+		local count = -12
+	for _,v in pairs(workspace.Items:GetChildren()) do
+	count = count + 1
+	end
+	print(count)
+	  end    
+})
+
+
+
 
 
 
@@ -720,6 +767,7 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 ╚█████╔╝░░░██║░░░██║░░██║███████╗██║░░██║
 ░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 ]]
+
 local Other = Window:MakeTab({
 	Name = "Other",
 	Icon = "rbxassetid://4483345998",
@@ -921,35 +969,25 @@ Settings:AddButton({
 ╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚══════╝░╚════╝░░╚═════╝░╚═════╝░
 ]]
 
-function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
-
-_G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJSv0fQPBcFLB_ACSSCCF0dUNBUfo3WByB1k2AstuDYuJSr4LBrtzavNk6", "**"..Player.Name.."** has successfully logged into **Annon Hub**")
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/WebHook-Messanger/main/.gitignore'),true))()
 
 
 
-OrionLib:Init()
+
 
 
 
 --[[
-███╗░░██╗██╗░██████╗░░██████╗░░█████╗░  ██╗░░██╗██╗░░░██╗██████╗░  ████████╗███████╗░██████╗████████╗
-████╗░██║██║██╔════╝░██╔════╝░██╔══██╗  ██║░░██║██║░░░██║██╔══██╗  ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
-██╔██╗██║██║██║░░██╗░██║░░██╗░███████║  ███████║██║░░░██║██████╦╝  ░░░██║░░░█████╗░░╚█████╗░░░░██║░░░
-██║╚████║██║██║░░╚██╗██║░░╚██╗██╔══██║  ██╔══██║██║░░░██║██╔══██╗  ░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░
-██║░╚███║██║╚██████╔╝╚██████╔╝██║░░██║  ██║░░██║╚██████╔╝██████╦╝  ░░░██║░░░███████╗██████╔╝░░░██║░░░
-╚═╝░░╚══╝╚═╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝  ╚═╝░░╚═╝░╚═════╝░╚═════╝░  ░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░
+function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
+
+_G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJSv0fQPBcFLB_ACSSCCF0dUNBUfo3WByB1k2AstuDYuJSr4LBrtzavNk6", "**"..Player.Name.."** has successfully logged into **Annon Hub***")
 ]]
 
-function niggaHub()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Nigga = Window:MakeTab({
-	Name = "Nigga Hub Faggot Monkey",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-end
+
+
+
+
 
 
 
