@@ -4,6 +4,11 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, Int
 
 
 
+
+
+
+
+
 --[[
 ███╗░░██╗░█████╗░████████╗██╗███████╗██╗░█████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗
 ████╗░██║██╔══██╗╚══██╔══╝██║██╔════╝██║██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
@@ -26,17 +31,6 @@ OrionLib:MakeNotification({
 	Content = "ERROR: Looking for the orginal Dark Dex (Use Synapse Dark Dex)",
 	Image = "rbxassetid://4483345998",
 	Time = 10
-})
-	end
-
-
--------------------------------- DESTROY UI --------------------------------
-function DestroyUI()
-OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
 })
 end
 
@@ -197,6 +191,7 @@ webImport("ui/main")
 end
 
 
+
 ------------------------------------ Crosswoods safty ------------------------------------
 function safe()
 local Module_Scripts = {}
@@ -275,15 +270,15 @@ local Profile = Window:MakeTab({
 local Section = Profile:AddSection({
 	Name = "Information"
 })
-Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me")
+Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
 local Section = Profile:AddSection({
 	Name = "Profile"
 })
-Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW")
+Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
 local Section = Profile:AddSection({
 	Name = "Whats Annon Hub for"
 })
-Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS")
+Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
 
 
@@ -305,7 +300,7 @@ local MainSection = Main:AddSection({
 	Name = "Main"
 })
 
-  -------------------------------- Infinite Yield --------------------------------
+-------------------------------- Infinite Yield --------------------------------
 Main:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
@@ -347,6 +342,7 @@ Callback = function()
 local Section = Main:AddSection({
 	Name = "Chat Spoofer"
 })
+Main:AddParagraph("Chat Spoofer","Spoofs the chat making it look as if somone else messaged.")
 Main:AddButton({
 	Name = "Chat Spoofer",
 	Callback = function()
@@ -391,7 +387,7 @@ local Prison = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder one day i need to find better FE admin commands")
+Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder one day i need to find better FE admin commands.")
 	local Section = Prison:AddSection({
 	Name = "Prison Life Scripts"
 })
@@ -501,10 +497,10 @@ local HUB = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good")
+HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good.")
 
 
--------------------------------- GUN SIMULATOR --------------------------------
+-------------------------------- Proxima Hub --------------------------------
 local Section = HUB:AddSection({
 	Name = "Proxima Hub"
 })
@@ -517,7 +513,7 @@ HUB:AddButton({
 HUB:AddDropdown({
 	Name = "Games Proxima Hub Supports",
 	Default = "Tapping Legends X",
-	Options = {"[+] Rebirth Champions X", "[+] Anime Journey", "[+] Ninja Legends", "[+] Gun Simulator", "[+] Legends Of Speed", "[+] Destruction Simulator", "[+] Saber Simulator", "[+] Tower Of Hell", "[+] Lucky Block", "[+] Horrific Housing", "[+]Anime Sword Simulator", "[+] Kick Off", "[+] Givenchy Beauty House", "[+] Tommy Play", "[+] Gucci Town", "[+] Broken Bones Simulator", "[+] Tate McRae Concert Experienc", "[+] Samsung Superstar Galaxy", "[+] Spotify Island", "[+] Logitech Song Breaker Awards", "[+] Alo Sanctuary", "Beatland", "[+] Clicker Madness", "[+] Roblox Pro League"},
+	Options = {"[+] Rebirth Champions X", "[+] Anime Journey", "[+] Ninja Legends", "[+] Gun Simulator", "[+] Legends Of Speed", "[+] Destruction Simulator", "[+] Saber Simulator", "[+] Tower Of Hell", "[+] Lucky Block", "[+] Horrific Housing", "[+]Anime Sword Simulator", "[+] Kick Off", "[+] Givenchy Beauty House", "[+] Tommy Play", "[+] Gucci Town", "[+] Broken Bones Simulator", "[+] Tate McRae Concert Experienc", "[+] Samsung Superstar Galaxy", "[+] Spotify Island", "[+] Logitech Song Breaker Awards", "[+] Alo Sanctuary", "[+] Beatland", "[+] Clicker Madness", "[+] Roblox Pro League"},
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -537,7 +533,7 @@ HUB:AddButton({
 HUB:AddDropdown({
 	Name = "Games Space X Supports",
 	Default = "Click to check",
-	Options = {"Raise A Floppa 2", "Pressure Wash Simulator", "Hunter x Athena", "Strong Simulator X", "Sizzling Simulator", "Mega Mansion Tycoon", "Strongman Simulator", "Rebirth Champions X", "Clicker Simulator", "Chicago Remastered", "Animal Simulator", "Collect All Pets", "Build A Boat For Treasure", "Boxing Simulator", "Tapping Legends X", "Base Battles", "Spider", "Tower Of Misery", "Criminality", "Goal Kick Simulator"},
+	Options = {"[+] Raise A Floppa 2", "[+] Pressure Wash Simulator", "[+] Hunter x Athena", "[+] Strong Simulator X", "[+] Sizzling Simulator", "[+] Mega Mansion Tycoon", "[+] Strongman Simulator", "[+] Rebirth Champions X", "[+] Clicker Simulator", "[+] Chicago Remastered", "[+] Animal Simulator", "[+] Collect All Pets", "[+] Build A Boat For Treasure", "[+] Boxing Simulator", "[+] Tapping Legends X", "[+] Base Battles", "[+] Spider", "[+] Tower Of Misery", "[+] Criminality", "[+] Goal Kick Simulator"},
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -547,7 +543,7 @@ HUB:AddDropdown({
 local Section = HUB:AddSection({
 	Name = "Pendulum Hub"
 })
-HUB:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
+HUB:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing.")
 HUB:AddButton({
 	Name = "Pendulum Hub",
 	Callback = function()
@@ -584,7 +580,7 @@ HUB:AddButton({
     local Section = HUB:AddSection({
 	Name = "Domain X"
 })
-HUB:AddParagraph("Domain X","Smart Script Domain X script hub")
+HUB:AddParagraph("Domain X","Smart Script Domain X script hub.")
 HUB:AddButton({
 	Name = "Domain X",
 	Callback = function()
@@ -592,37 +588,6 @@ HUB:AddButton({
   	end    
 })
 
-
--------------------------------- Nullware Hub V3 --------------------------------
-local Section = HUB:AddSection({
-	Name = "Nullware Hub V3"
-})
-	HUB:AddParagraph("Nullware Hub V3","Goto Seby's discord: https://discord.gg/ukBFMxVCKS to see the featrues")
-	HUB:AddButton({
-	Name = "Nullware Hub V3",
-	Callback = function()
-      		getgenv().Theme = "Blue" -- To change the UI Theme, set this to one of the following options: "Red", "Purple", "Blue", "Green", "Yellow"
-                loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
-  	end    
-})
-
-
--------------------------------- Shark Bite --------------------------------
-local Section = HUB:AddSection({
-	Name = "Shark Bite LOOF-sys"
-})
-HUB:AddButton({
-	Name = "Shark Bite",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
-  	end    
-})
-HUB:AddButton({
-	Name = "Join Shark Bite Game",
-	Callback = function()
-      		sharkTeleport()
-  	end    
-})
 
 -------------------------------- Ultra Hub --------------------------------
 local Section = HUB:AddSection({
@@ -715,6 +680,23 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 				  infiniteBlocks()
 		  end    
 	})
+
+-------------------------------- Shark Bite --------------------------------
+local Section = Scripts:AddSection({
+	Name = "Shark Bite LOOF-sys"
+})
+Scripts:AddButton({
+	Name = "Shark Bite",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
+  	end    
+})
+Scripts:AddButton({
+	Name = "Join Shark Bite Game",
+	Callback = function()
+      		sharkTeleport()
+  	end    
+})
  
 
 -------------------------------- Music Player --------------------------------
@@ -773,7 +755,7 @@ local Other = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in")
+Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in.")
 
 
 
@@ -808,7 +790,7 @@ end
 
 
 
-Other:AddParagraph("Choose one","Choose one slider then click this button one of the sliders will create a special script hub")
+Other:AddParagraph("Choose one","Choose one slider then click this button one of the sliders will create a special script hub.")
 Other:AddDropdown({
 	Name = "Down",
 	Default = "click me "..Player.Name.."",
