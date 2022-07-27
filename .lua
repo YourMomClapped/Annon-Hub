@@ -771,8 +771,6 @@ Scripts:AddButton({
 
 
 
-
-
 -------------------------------- Music Player --------------------------------
 	local Section = Scripts:AddSection({
 		Name = "Music Player"
@@ -807,7 +805,7 @@ Scripts:AddButton({
 	  end    
 })
 
------------------------------------------- DA HOOD SCRIPTS
+------------------------------------------ DA HOOD SCRIPTS ------------------------------------------
 local Section = Scripts:AddSection({
 	Name = "Da Hood"
 })
@@ -818,6 +816,16 @@ Scripts:AddButton({
   	end    
 })
 
+------------------------------------------ Brook Haven ------------------------------------------
+local Section = Scripts:AddSection({
+	Name = "Brook Haven"
+})
+Scripts:AddButton({
+	Name = "Brook Haven (OP SCRIPT)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+  	end    
+})
 
 
 
