@@ -307,8 +307,8 @@ local Section = Profile:AddSection({
 Profile:AddParagraph("Join a game","Click the numbers blow the game name EXAMPLE: if i want to join ''[+] My Test Game ⬇'' i click ''4632363497''.")
 Profile:AddDropdown({
 	Name = "Choose game",
-	Default = "Pick A Game",
-	Options = {"Pick A Game", "[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
+	Default = "",
+	Options = {"[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
 	Callback = function(Value)
 		_G.TeleportString = Value
 	end    
@@ -882,18 +882,7 @@ Other:AddButton({
 })
 
 
--------------------------------- TELEPORT TO MY TEST GAME --------------------------------
-if Player.UserId == 1201621667 then
-local Section = Other:AddSection({
-	Name = "Teleport to Test IDK"
-})
-Other:AddButton({
-	Name = "Teleport (Test IDK)",
-	Callback = function()
-      		Teleport()
-  	end    
-})
-end
+
 
 
 
