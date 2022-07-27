@@ -377,12 +377,30 @@ Main:AddButton({
 })
 
   -------------------------------- Silent Aim --------------------------------
+  local Section = Main:AddSection({
+	Name = "Silent Aims (BARLEY USED)"
+})
 Main:AddButton({
 	Name = "Universial",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
   	end    
 })
+Main:AddButton({
+	Name = "Fatesc",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
+  	end    
+})
+Main:AddDropdown({
+	Name = "Fatesc Features",
+	Default = "",
+	Options = {"[+] Silent Aim", "[+] Aimbot", "[+] ESP"},
+	Callback = function(Value)
+		Print(Value)
+	end    
+})
+
 
 -------------------------------- CMD X MAIN SCRIPT --------------------------------
 local Section = Main:AddSection({
