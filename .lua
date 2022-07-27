@@ -402,6 +402,9 @@ Main:AddDropdown({
 })
 
 
+
+
+
 -------------------------------- CMD X MAIN SCRIPT --------------------------------
 local Section = Main:AddSection({
 	Name = "Cmd X"
@@ -577,6 +580,10 @@ local HUB = Window:MakeTab({
 HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good.")
 
 
+
+
+
+
 -------------------------------- Proxima Hub --------------------------------
 local Section = HUB:AddSection({
 	Name = "Proxima Hub"
@@ -594,6 +601,20 @@ HUB:AddDropdown({
 	Callback = function(Value)
 		print(Value)
 	end    
+})
+
+
+
+---------------------- Scriptblox.com ----------------------------
+local Section = HUB:AddSection({
+	Name = "Scriptblox.com"
+})
+HUB:AddParagraph("Scriptblox.com","Basically scans the website and updates all content that is uploaded onto scriptblox.com")
+HUB:AddButton({
+	Name = "Scriptblox",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/YourMomClapped/main/.lua", true))()
+  	end    
 })
 
 
@@ -1108,3 +1129,6 @@ end
 
 OrionLib:Init()
 OrionLib:Destroy()
+
+
+
