@@ -358,10 +358,24 @@ local Main = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+-------------------------------- Orca --------------------------------
+local Section = Main:AddSection({
+	Name = "Orca"
+})
+Main:AddParagraph("Orca","Very clean ui (Should check out)")
+
+
 Main:AddParagraph("Main","Mostly Universial scripts")
 local MainSection = Main:AddSection({
 	Name = "Main"
 })
+Main:AddButton({
+	Name = "Orca",
+	Callback = function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
+  	end    
+})
+
 
 -------------------------------- Infinite Yield --------------------------------
 Main:AddButton({
