@@ -325,25 +325,7 @@ local Section = Profile:AddSection({
 })
 Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
------------------------------- JOIN GAME ------------------------------------
-local Section = Profile:AddSection({
-	Name = "Game Teleport"
-})
-Profile:AddParagraph("Join a game","Click the numbers blow the game name EXAMPLE: if i want to join ''[+] My Test Game ⬇'' i click ''4632363497''.")
-Profile:AddDropdown({
-	Name = "Choose game",
-	Default = "",
-	Options = {"[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
-	Callback = function(Value)
-		_G.TeleportString = Value
-	end    
-})
-Profile:AddButton({
-	Name = "Join Game",
-	Callback = function()
-      		gameTeleport()
-  	end    
-})
+
 
 
 --[[
@@ -1032,6 +1014,27 @@ Settings:AddButton({
       		OrionLib:Destroy()
   	end    
 })
+
+------------------------------ JOIN GAME ------------------------------------
+local Section = Settings:AddSection({
+	Name = "Game Teleport"
+})
+Settings:AddParagraph("Join a game","Click the numbers blow the game name EXAMPLE: if i want to join ''[+] My Test Game ⬇'' i click ''4632363497''.")
+Settings:AddDropdown({
+	Name = "Choose game",
+	Default = "",
+	Options = {"[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
+	Callback = function(Value)
+		_G.TeleportString = Value
+	end    
+})
+Settings:AddButton({
+	Name = "Join Game",
+	Callback = function()
+      		gameTeleport()
+  	end    
+})
+
 
 --[[
 ███████╗███████╗███████╗██████╗░  ██████╗░░█████╗░░█████╗░██╗░░██╗
