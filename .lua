@@ -22,7 +22,7 @@ OrionLib:MakeNotification({
 	Name = "Annon Hub",
 	Content = "Your have successfully logged in as "..Player.Name..".",
 	Image = "rbxassetid://9411304331",
-	Time = 5
+	Time = 10
 	})
 
 -------------------------------- ERROR 404 Dark Dex --------------------------------
