@@ -1,7 +1,7 @@
 local Player = game.Players.LocalPlayer
 local sound
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
+local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://4370299859", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 
 
 
@@ -21,7 +21,7 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, Int
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
 	Content = "Your have successfully logged in as "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://4370299859",
 	Time = 5
 	})
 
@@ -30,17 +30,18 @@ function dark()
 OrionLib:MakeNotification({
 	Name = "ERROR: 404",
 	Content = "ERROR: Looking for the orginal Dark Dex (Use Synapse Dark Dex)",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://3944689656",
 	Time = 10
 })
 end
+
 
 ------------------------------ Inject Tycoon Hub
 function InjectTycoon()
 	OrionLib:MakeNotification({
 		Name = "Injecting",
 		Content = "Injecting Tycoon Hub.",
-		Image = "rbxassetid://4483345998",
+		Image = "rbxassetid://4335477481",
 		Time = 5
 		})
 	end
@@ -49,7 +50,7 @@ function InjectFE()
 OrionLib:MakeNotification({
 	Name = "Injecting",
 	Content = "Injecting FE ScriptHub.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://4335477481",
 	Time = 5
 	})
 end
@@ -59,7 +60,7 @@ function InjectSimple()
 OrionLib:MakeNotification({
 	Name = "Injecting",
 	Content = "Injecting Simple Simulator.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://4335477481",
 	Time = 5
 	})
 end
@@ -69,7 +70,7 @@ function InjectSimulator()
 OrionLib:MakeNotification({
 	Name = "Injecting",
 	Content = "Injecting Simulator Hub.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://4335477481",
 	Time = 5
 	})
 end
@@ -79,7 +80,7 @@ function FeedBackNotif()
 OrionLib:MakeNotification({
 	Name = "Feedback",
 	Content = "Thank you for sending us feedback we will look into it.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://3605017115",
 	Time = 5
 })
 end
@@ -199,6 +200,9 @@ end)
 end
 
 
+
+
+
 ------------------ Music Player ----------------
 function MusicPlayer()
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
@@ -309,7 +313,7 @@ end
 
 local Profile = Window:MakeTab({
 	Name = "Profile",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6961018885",
 	PremiumOnly = false
 })
 local Section = Profile:AddSection({
@@ -337,7 +341,7 @@ Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of 
 
 local Main = Window:MakeTab({
 	Name = "Main",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4370345144",
 	PremiumOnly = false
 })
 
@@ -353,7 +357,7 @@ Main:AddParagraph("Main","Mostly Universial scripts")
 Main:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/Loading-Screen/main/.lua'),true))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
   	end    
 })
 
@@ -510,7 +514,7 @@ end
 
 local Imade = Window:MakeTab({
 	Name = "My Script Hubs",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4335477481",
 	PremiumOnly = false
 })
 
@@ -578,7 +582,7 @@ Imade:AddButton({
 ]]
 local HUB = Window:MakeTab({
 	Name = "Script Hubs",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4370346095",
 	PremiumOnly = false
 })
 HUB:AddParagraph("Script Hub","Random Script Hubs i find and are good.")
@@ -762,7 +766,7 @@ HUB:AddDropdown({
 
 local Scripts = Window:MakeTab({
 	Name = "Scripts",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4330060040",
 	PremiumOnly = false
 })
 Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
@@ -877,7 +881,7 @@ Scripts:AddButton({
 
 local Other = Window:MakeTab({
 	Name = "Other",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://3944702361",
 	PremiumOnly = false
 })
 Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in.")
@@ -948,7 +952,7 @@ Other:AddButton({
 
 local Settings = Window:MakeTab({
 	Name = "Settings",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4483345737",
 	PremiumOnly = false
 })
 
@@ -1046,7 +1050,7 @@ Settings:AddButton({
 
 local Feedback = Window:MakeTab({
 	Name = "Feedback",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4370314188",
 	PremiumOnly = false
 })
 
