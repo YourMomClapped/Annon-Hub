@@ -20,7 +20,7 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid:
 
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
-	Content = "Your have successfully logged in as "..Player.Name..".",
+	Content = "You have successfully logged in as "..Player.Name..".",
 	Image = "rbxassetid://9411304331",
 	Time = 10
 	})
