@@ -313,20 +313,25 @@ end
 
 local Profile = Window:MakeTab({
 	Name = "Profile",
-	Icon = "rbxassetid://6961018885",
+	Icon = "rbxassetid://9411304331",
 	PremiumOnly = false
 })
-local Section = Profile:AddSection({
-	Name = "Information"
-})
-Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
+------- Profile ----------
 local Section = Profile:AddSection({
 	Name = "Profile"
+})
+Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
+
+------ Information --------
+local Section = Profile:AddSection({
+	Name = "Information"
 })
 Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
 local Section = Profile:AddSection({
 	Name = "Whats Annon Hub for"
 })
+
+--------- What its for --------
 Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
 
