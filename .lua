@@ -1,5 +1,7 @@
 local Player = game.Players.LocalPlayer
 local sound
+local client = game.Players.LocalPlayer
+local char = client.Character
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://9411304331", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
 -- 4370299859
@@ -97,10 +99,11 @@ end
 ░░╚██╔╝░░██║░░██║███████╗╚██████╔╝███████╗██████╔╝
 ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝╚═════╝░                               ]]
 
-_G.autoClicker = true -- Tapping Legends X
-_G.autoRebirth = true -- Tapping Legends X
-_G.autoEgg = true -- Tapping Legends X
-_G.autoHatch = true -- Tapping Legends X
+_G.autoClicker = true ------- Tapping Legends X
+_G.autoRebirth = true ------- Tapping Legends X
+_G.autoEgg = true ------- Tapping Legends X
+_G.autoHatch = true --------- Tapping Legends X
+_G.TypeRaceSpeed = "string" ------------ Type Racer (Custom Speed number)
 
 
 _G.sliderString = "string" -- slider string
@@ -288,6 +291,67 @@ end
 
 
 
+
+
+
+-------------------------------------- Type Race --------------------------------------
+function typeRace()
+	
+--[[
+    Don't change speed to below 0.04, it will ban you for having a WPM higher than ~250
+    
+    0.05 is about 190 WPM
+    0.04 is about 220 WPM
+]]
+
+
+
+
+
+local Speed = _G.TypeRaceSpeed
+
+
+-- Simulates pressing a key
+local vim = game:GetService("VirtualInputManager")
+local function PressKey(name)
+    vim:SendKeyEvent(true, Enum.KeyCode[name], false, game)
+    vim:SendKeyEvent(false, Enum.KeyCode[name], false, game)
+end
+
+-- Gets keys
+local keys = workspace.Letters:GetChildren()[1]
+local start
+for i,v in pairs(keys:GetChildren()) do
+    if v:FindFirstChild("PopupTemplate") then
+        start = v
+    end
+end
+
+local dists = {}
+for i,v in pairs(keys:GetChildren()) do
+    if v:FindFirstChild("SurfaceGui") then
+        local dist = (v.Position - start.Position).Magnitude
+        table.insert(dists,{v,dist})
+    end
+end
+
+table.sort(dists,
+    function(a,b)
+    	return a[2] < b[2]
+    end
+)
+
+-- Type 'em
+for i,v in pairs(dists) do
+    local letter = string.upper(v[1].SurfaceGui.TextLabel.Text)
+    if letter == " " then
+        PressKey("Space")
+    else
+        PressKey(letter)
+    end
+    task.wait(Speed)
+end
+end
 
 
 
@@ -778,6 +842,30 @@ local Scripts = Window:MakeTab({
 Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More then 'Other')")
 
 
+
+-------------------------------- Type Racer --------------------------------
+	local Section = Scripts:AddSection({
+		Name = "Type race"
+	})
+	Scripts:AddParagraph("Type Race (READ THIS)","Choose from 0.05(200 WPM) through 0.15 (50 WPM) (Faster then 0.05 get you banned) 0.13 makes it look legit")
+	Scripts:AddTextbox({
+		Name = "Type Speed",
+		Default = "0.05.",
+		TextDisappear = false,
+		Callback = function(Value)
+			_G.TypeRaceSpeed = Value
+
+		end	  
+
+	})
+	Scripts:AddButton({
+		Name = "inject Type Speed (Faster then 0.05 get you banned)",
+		Callback = function()
+			typeRace()
+		  end    
+	})
+
+
 -------------------------------- Build A Boat --------------------------------
 	local Section = Scripts:AddSection({
 		Name = "Build a boat"
@@ -871,6 +959,7 @@ Scripts:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
   	end    
 })
+
 
 
 
