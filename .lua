@@ -864,20 +864,32 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 			typeRace()
 		  end    
 	})
+	-------------------------- Join Type Race Game --------------------------
+	Scripts:AddButton({
+		Name = "Join Type Race (Joins the game)",
+		Callback = function()
+			local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+ 
+local placeId = 7232779505 -- replace here
+ 
+TeleportService:Teleport(placeId)
+		  end    
+	})
 
 
 -------------------------------- Build A Boat --------------------------------
 	local Section = Scripts:AddSection({
-		Name = "Build a boat"
+		Name = "Build A Boat For Treasture"
 	})
 	Scripts:AddButton({
-		Name = "Build A Boat",
+		Name = "Build A Boat For Treasure",
 		Callback = function()
 				  
 		  end    
 	})
 	Scripts:AddDropdown({
-		Name = "Build a boat features",
+		Name = "Build A Boat features",
 		Default = "1",
 		Options = {"[+] Copy players builds", "[+] auto build (File)", "[+] Preview file build", "[+] List blocks", "[+] Safe Mode"},
 		Callback = function(Value)
@@ -885,11 +897,25 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 		end    
 	})
 	Scripts:AddButton({
-		Name = "Build a boat: Infinite Blocks",
+		Name = "Build A Boat: Infinite Blocks",
 		Callback = function()
 				  infiniteBlocks()
 		  end    
 	})
+-------------------------- Join Bukd A boat --------------------------
+	Scripts:AddButton({
+		Name = "Join Build A Boat For Treasure (Joins the game)",
+		Callback = function()
+			local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+ 
+local placeId = 537413528 -- replace here
+ 
+TeleportService:Teleport(placeId)
+		  end    
+	})
+
+
 
 -------------------------------- Shark Bite --------------------------------
 local Section = Scripts:AddSection({
