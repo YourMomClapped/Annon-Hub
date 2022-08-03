@@ -4,8 +4,14 @@ local client = game.Players.LocalPlayer
 local char = client.Character
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://9411304331", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
--- 4370299859
--- 6723015609
+
+--[[
+	9411304331 -- Main used 
+	8485853064 -- W
+	4370299859
+	6723015609
+]]
+
 
 
 
@@ -847,10 +853,25 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 	local Section = Scripts:AddSection({
 		Name = "Type race"
 	})
+
 	Scripts:AddParagraph("Type Race (READ THIS)","Choose from 0.05(200 WPM) through 0.15 (50 WPM) (Faster then 0.05 get you banned) 0.13 makes it look legit")
+
+		-------------------------- Join Type Race Game --------------------------
+		Scripts:AddButton({
+			Name = "Join Type Race (Joins the game)",
+			Callback = function()
+				local Players = game:GetService("Players")
+	local TeleportService = game:GetService("TeleportService")
+	 
+	local placeId = 7232779505 -- replace here
+	 
+	TeleportService:Teleport(placeId)
+			  end    
+		})
+
 	Scripts:AddTextbox({
 		Name = "Type Speed",
-		Default = "0.05.",
+		Default = "No higher then 0.05",
 		TextDisappear = false,
 		Callback = function(Value)
 			_G.TypeRaceSpeed = Value
@@ -864,24 +885,27 @@ Scripts:AddParagraph("Scripts","Random scripts that i wouold mostly use (More th
 			typeRace()
 		  end    
 	})
-	-------------------------- Join Type Race Game --------------------------
-	Scripts:AddButton({
-		Name = "Join Type Race (Joins the game)",
-		Callback = function()
-			local Players = game:GetService("Players")
-local TeleportService = game:GetService("TeleportService")
- 
-local placeId = 7232779505 -- replace here
- 
-TeleportService:Teleport(placeId)
-		  end    
-	})
+
 
 
 -------------------------------- Build A Boat --------------------------------
 	local Section = Scripts:AddSection({
 		Name = "Build A Boat For Treasture"
 	})
+
+-------------------------- Join Build A boat --------------------------
+Scripts:AddButton({
+	Name = "Join Build A Boat For Treasure (Joins the game)",
+	Callback = function()
+		local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+
+local placeId = 537413528 -- replace here
+
+TeleportService:Teleport(placeId)
+	  end    
+})
+
 	Scripts:AddButton({
 		Name = "Build A Boat For Treasure",
 		Callback = function()
@@ -902,18 +926,7 @@ TeleportService:Teleport(placeId)
 				  infiniteBlocks()
 		  end    
 	})
--------------------------- Join Bukd A boat --------------------------
-	Scripts:AddButton({
-		Name = "Join Build A Boat For Treasure (Joins the game)",
-		Callback = function()
-			local Players = game:GetService("Players")
-local TeleportService = game:GetService("TeleportService")
- 
-local placeId = 537413528 -- replace here
- 
-TeleportService:Teleport(placeId)
-		  end    
-	})
+
 
 
 
@@ -992,6 +1005,7 @@ Scripts:AddButton({
 
 
 
+
 --[[
 ░█████╗░████████╗██╗░░██╗███████╗██████╗░
 ██╔══██╗╚══██╔══╝██║░░██║██╔════╝██╔══██╗
@@ -1026,26 +1040,6 @@ Other:AddButton({
 
 
 
-
-
-
-
-Other:AddParagraph("Choose one","Choose one slider then click this button one of the sliders will create a special script hub.")
-Other:AddDropdown({
-	Name = "Down",
-	Default = "click me "..Player.Name.."",
-	Options = {"click me "..Player.Name.."", "print that Value", "Dog Hub :)"},
-	Callback = function(Value)
-		_G.sliderString = Value
-	end    
-})Other:AddButton({
-	Name = "Choose one slider then click this button",
-	Callback = function()
-      		if _G. sliderString == _G.niggaHub then
-				niggaHub()
-      		end    
-  end
-})
 
 -------------------------------- Crosswoods safty --------------------------------
 local Section = Other:AddSection({
