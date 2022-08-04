@@ -116,13 +116,53 @@ _G.TypeRaceSpeed = "string" ------------ Type Racer (Custom Speed number)
 _G.sliderString = "string" -- slider string
 _G.niggaHub = "Dog Hub :)"
 
---------------- Game teleport ---------------------
-_G.TeleportString = "string"
+
 
 -------- Feed Back ------
 _G.FeedBackString = "string"
 
 
+
+
+
+
+
+
+--------------- Game teleport ---------------------
+_G.TestIDKTeleportString = "[+] My Test Game" 
+_G.HighSchoolLifeTeleportString = "[+] High School Life"
+_G.PrisonLifeTeleport = "[+] Prison Life"
+
+
+------------------------------- Teleport to Test IDK -------------------------------
+function TestIDKTeleport()
+	local Players = game:GetService("Players")
+	local TeleportService = game:GetService("TeleportService")
+	 
+	local placeId = 4632363497
+	 
+	TeleportService:Teleport(placeId)
+	end
+
+------------------------------- Teleport to High School Life -------------------------------
+function HighSchoolLifeTeleport()
+	local Players = game:GetService("Players")
+	local TeleportService = game:GetService("TeleportService")
+	 
+	local placeId = 92604236
+	 
+	TeleportService:Teleport(placeId)
+	end
+
+------------------------------- Teleport to Prison Life -------------------------------
+function PrisonLifeTeleport()
+	local Players = game:GetService("Players")
+	local TeleportService = game:GetService("TeleportService")
+	 
+	local placeId = 155615604
+	 
+	TeleportService:Teleport(placeId)
+	end
 
 
 --[[
@@ -146,15 +186,7 @@ end
 
 
 
-------------------------------- Teleport to Test IDK
-function gameTeleport()
-local Players = game:GetService("Players")
-local TeleportService = game:GetService("TeleportService")
- 
-local placeId = _G.TeleportString
- 
-TeleportService:Teleport(placeId)
-end
+
 
 
 -------------------------------- Tapping Legends X --------------------------------
@@ -425,6 +457,31 @@ local Main = Window:MakeTab({
 })
 
 
+------------------------------ JOIN GAME ------------------------------------
+local Section = Main:AddSection({
+	Name = "Game Teleport"
+})
+Main:AddParagraph("Join a game","Choose you want to join)")
+Main:AddDropdown({
+	Name = "Choose game",
+	Default = "",
+	Options = {"[+] My Test Game", "[+] High School Life", "[+] Prison Life"},
+	Callback = function(Value)
+		_G.TeleportString = Value
+		if _G.HighSchoolLifeTeleportString == Value then
+			HighSchoolLifeTeleport()
+		elseif _G.TestIDKTeleportString == Value then
+			TestIDKTeleport()
+		elseif _G.PrisonLifeTeleportString == Value then
+			PrisonLifeTeleport()
+		end
+	end    
+})
+
+
+
+
+
 
 local MainSection = Main:AddSection({
 	Name = "Main"
@@ -538,14 +595,15 @@ Main:AddButton({
 
 
 
+--[[
+██████╗░██████╗░██╗░██████╗░█████╗░███╗░░██╗  ██╗░░░░░██╗███████╗███████╗
+██╔══██╗██╔══██╗██║██╔════╝██╔══██╗████╗░██║  ██║░░░░░██║██╔════╝██╔════╝
+██████╔╝██████╔╝██║╚█████╗░██║░░██║██╔██╗██║  ██║░░░░░██║█████╗░░█████╗░░
+██╔═══╝░██╔══██╗██║░╚═══██╗██║░░██║██║╚████║  ██║░░░░░██║██╔══╝░░██╔══╝░░
+██║░░░░░██║░░██║██║██████╔╝╚█████╔╝██║░╚███║  ███████╗██║██║░░░░░███████╗
+╚═╝░░░░░╚═╝░░╚═╝╚═╝╚═════╝░░╚════╝░╚═╝░░╚══╝  ╚══════╝╚═╝╚═╝░░░░░╚══════╝
+]]
 
-
-
-
-
-
-
--------------------------------- Prison Life --------------------------------
 if game.PlaceId == 155615604 then
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
@@ -1136,25 +1194,8 @@ Settings:AddButton({
   	end    
 })
 
------------------------------- JOIN GAME ------------------------------------
-local Section = Settings:AddSection({
-	Name = "Game Teleport"
-})
-Settings:AddParagraph("Join a game","Click the numbers blow the game name EXAMPLE: if i want to join ''[+] My Test Game ⬇'' i click ''4632363497''.")
-Settings:AddDropdown({
-	Name = "Choose game",
-	Default = "",
-	Options = {"[+] My Test Game ⬇", "4632363497", "[+] High School Life ⬇", "92604236", "[+] Prison Life ⬇", "155615604"},
-	Callback = function(Value)
-		_G.TeleportString = Value
-	end    
-})
-Settings:AddButton({
-	Name = "Join Game",
-	Callback = function()
-      		gameTeleport()
-  	end    
-})
+
+
 
 
 --[[
