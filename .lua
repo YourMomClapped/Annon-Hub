@@ -502,7 +502,7 @@ Profile:AddButton({
 	Name = "Join Annon Hub offical discord server",
 	Callback = function()
 		SendingInviteSunrise()
-		wait(2)
+		waitt()
       	Sunrise()
   	end    
 })
@@ -512,7 +512,7 @@ Profile:AddButton({
 	Name = "Join Siris Discord Server (Orion UI Library)",
 	Callback = function()
 		SendingInviteSiris()
-		wait(2)
+		waitt()
       	SirisDiscordInvite()
   	end    
 })
