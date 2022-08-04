@@ -107,7 +107,7 @@ function Teleporting()
 function SendingInviteSunrise()
 	OrionLib:MakeNotification({
 		Name = "Sending Discord Invite",
-		Content = "Sending Invite to our official discord server. . .",
+		Content = "Sending Invite to our official discord server . . .",
 		Image = "rbxassetid://4370314188",
 		Time = 10
 		})
@@ -117,7 +117,7 @@ function SendingInviteSunrise()
 	function SendingInviteSiris()
 		OrionLib:MakeNotification({
 			Name = "Sending Discord Invite",
-			Content = "Sending Invite to Siris/Orion. . .",
+			Content = "Sending Invite to Siris/Orion . . .",
 			Image = "rbxassetid://4370314188",
 			Time = 10
 			})
