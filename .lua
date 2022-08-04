@@ -94,6 +94,15 @@ OrionLib:MakeNotification({
 })
 end
 
+function Teleporting()
+	OrionLib:MakeNotification({
+		Name = "Teleporting",
+		Content = "Teleporting to ".._G.ShowTeleportName..". . .",
+		Image = "rbxassetid://3944689656",
+		Time = 10
+	})
+	end
+
 
 
 
@@ -129,9 +138,11 @@ _G.FeedBackString = "string"
 
 
 --------------- Game teleport ---------------------
+_G.ShowTeleportName = "string"
 _G.TestIDKTeleportString = "[+] My Test Game" 
 _G.HighSchoolLifeTeleportString = "[+] High School Life"
 _G.PrisonLifeTeleport = "[+] Prison Life"
+
 
 
 ------------------------------- Teleport to Test IDK -------------------------------
@@ -467,7 +478,9 @@ Main:AddDropdown({
 	Default = "",
 	Options = {"[+] My Test Game", "[+] High School Life", "[+] Prison Life"},
 	Callback = function(Value)
-		_G.TeleportString = Value
+		_G.ShowTeleportName = Value
+		Teleporting()
+		wait(2)
 		if _G.HighSchoolLifeTeleportString == Value then
 			HighSchoolLifeTeleport()
 		elseif _G.TestIDKTeleportString == Value then
