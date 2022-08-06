@@ -6,8 +6,8 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://10459365675", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
 
 --[[
-	9411304331 -- Main used 
-	10459365675 -- Main Used
+	9411304331 -- Main Picture (Main used) 
+	10459365675 -- 2 cirle (Main Used one)
 	8485853064 -- W
 	4370299859
 	6723015609
@@ -123,6 +123,107 @@ function SendingInviteSunrise()
 			})
 		end
 
+
+
+		function HighSchoolLifeReSizer()
+
+		local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("script by")
+
+local c = w:CreateFolder("oooga booga")
+c:Box("Overrall size","number",function(value) -- "number" or "string"
+
+
+local args = {
+   [1] = {
+       ["BodyTypeScale"] = value,
+       ["DepthScale"] = value,
+       ["HeadScale"] = value,
+       ["HeightScale"] = value,
+       ["ProportionScale"] = value,
+       ["WidthScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("WidthScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["WidthScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("HeightScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["HeightScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("HeadScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["HeadScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("DepthScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["DepthScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("BodyTypeScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["BodyTypeScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Box("ProportionScale","number",function(value) -- "number" or "string"
+local args = {
+   [1] = {
+
+       ["ProportionScale"] = value
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+c:Button("Becum buff",function()
+
+local args = {
+   [1] = {
+       ["BodyTypeScale"] = 1.5,
+       ["DepthScale"] = 1.7,
+       ["HeadScale"] = 1.5,
+       ["HeightScale"] = 1.5,
+       ["ProportionScale"] = 1.5,
+       ["WidthScale"] = 1.7
+   }
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
+end)
+end
 
 
 
@@ -687,6 +788,7 @@ Main:AddButton({
 ]]
 waitt()
 if game.PlaceId == 155615604 then
+	waitt()
 local Prison = Window:MakeTab({
 	Name = "Prison Life",
 	Icon = "rbxassetid://10375528954",
@@ -713,6 +815,60 @@ Prison:AddParagraph("Prison Life","Prison life scripts this should be a reminder
   	end    
 })
 end
+
+
+--[[
+██╗░░██╗██╗░██████╗░██╗░░██╗  ░██████╗░█████╗░██╗░░██╗░█████╗░░█████╗░██╗░░░░░  ██╗░░░░░██╗███████╗███████╗
+██║░░██║██║██╔════╝░██║░░██║  ██╔════╝██╔══██╗██║░░██║██╔══██╗██╔══██╗██║░░░░░  ██║░░░░░██║██╔════╝██╔════╝
+███████║██║██║░░██╗░███████║  ╚█████╗░██║░░╚═╝███████║██║░░██║██║░░██║██║░░░░░  ██║░░░░░██║█████╗░░█████╗░░
+██╔══██║██║██║░░╚██╗██╔══██║  ░╚═══██╗██║░░██╗██╔══██║██║░░██║██║░░██║██║░░░░░  ██║░░░░░██║██╔══╝░░██╔══╝░░
+██║░░██║██║╚██████╔╝██║░░██║  ██████╔╝╚█████╔╝██║░░██║╚█████╔╝╚█████╔╝███████╗  ███████╗██║██║░░░░░███████╗
+╚═╝░░╚═╝╚═╝░╚═════╝░╚═╝░░╚═╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝░╚════╝░░╚════╝░╚══════╝  ╚══════╝╚═╝╚═╝░░░░░╚══════╝
+]]
+
+if game.PlaceId == 92604236 then
+	waitt()
+	local hsl = Window:MakeTab({
+		Name = "High School Life",
+		Icon = "rbxassetid://3566495089",
+		PremiumOnly = false
+	})
+	hsl:AddParagraph("High School Life","High School life scripts: Scripts that Mainly for High school Life")
+	local Section = hsl:AddSection({
+		Name = "High School Life Scripts"
+	})
+
+	------------------------------ Avatar Resizer ------------------------------
+	hsl:AddParagraph("High School Life","Avatar Resizer: Makes your avatar bigger.")
+	hsl:AddButton({
+		Name = "Avatar ReSizer (MAY LAG FOR A COUPLE SECONDS)",
+		Callback = function()
+				  HighSchoolLifeReSizer()
+		  end    
+	})
+	
+
+
+	local Section = hsl:AddSection({
+		Name = "Auto Give Combat"
+	})
+	hsl:AddParagraph("High School Life","Kill: Used with Cmd X to use the kill command.")
+	hsl:AddParagraph("High School Life","Info: After injecting Reset, then use ;kill 'Players username' its very buuggy you need to change your avatar height for stupid ass slenders(If it doesnt work)")
+
+	------------------------------ For Kill Command ------------------------------
+	hsl:AddButton({
+		Name = "Auto Give Combat (Killing people with CmdX)",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+			game.Players.LocalPlayer.CharacterAdded:Connect(function() 
+				game:GetService("ReplicatedStorage").GiveToolReceiveTool.EquipUnequipTool:InvokeServer("Combat Tool",false)
+			game:GetService("ReplicatedStorage").GiveToolReceiveTool.EquipUnequipTool:InvokeServer("Combat Tool",true)
+			end)			
+		  end    
+	})
+end
+
+
 
 
 
@@ -784,6 +940,11 @@ Imade:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/YourMomClapped/Fe-ScriptHub/main/.lua", true))()
   	end    
 })
+
+
+
+
+
 
 
 
@@ -1148,54 +1309,6 @@ Scripts:AddButton({
 
 
 
---[[
-░█████╗░████████╗██╗░░██╗███████╗██████╗░
-██╔══██╗╚══██╔══╝██║░░██║██╔════╝██╔══██╗
-██║░░██║░░░██║░░░███████║█████╗░░██████╔╝
-██║░░██║░░░██║░░░██╔══██║██╔══╝░░██╔══██╗
-╚█████╔╝░░░██║░░░██║░░██║███████╗██║░░██║
-░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-]]
-waitt()
-local Other = Window:MakeTab({
-	Name = "Other",
-	Icon = "rbxassetid://3944702361",
-	PremiumOnly = false
-})
-Other:AddParagraph("Other","Mostly scripts ill probably use in the future or interested in.")
-
-
-
--------------------------------- Log Player Information --------------------------------
-local Section = Other:AddSection({
-	Name = "Player Logger"
-})
-Other:AddParagraph("Print Player Info","Choose a victim, when chosen it shows their information such as what device they use, what country they live in ETC.")
-Other:AddButton({
-	Name = "Print Player Info",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Bukito20/Public-scripts/main/IslandsGrabberGui'))()
-  	end    
-})
-
-
-
-
-
-
--------------------------------- Crosswoods safty --------------------------------
-local Section = Other:AddSection({
-	Name = "Safty"
-})
-
-Other:AddButton({
-	Name = "Crosswoods safty (Cannot get temp banned)",
-	Callback = function()
-      		Safe()
-  	end    
-})
-
-
 
 
 
@@ -1328,6 +1441,89 @@ Feedback:AddButton({
       	Sunrise()
   	end    
 })
+
+--[[
+░█████╗░██████╗░███████╗██████╗░██╗████████╗░██████╗
+██╔══██╗██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝██╔════╝
+██║░░╚═╝██████╔╝█████╗░░██║░░██║██║░░░██║░░░╚█████╗░
+██║░░██╗██╔══██╗██╔══╝░░██║░░██║██║░░░██║░░░░╚═══██╗
+╚█████╔╝██║░░██║███████╗██████╔╝██║░░░██║░░░██████╔╝
+░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝░░░╚═╝░░░╚═════╝░
+]]
+waitt()
+local Credit = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://6961018885",
+	PremiumOnly = false
+})
+
+
+
+
+-------------------------- Credits --------------------------
+local Section = Credit:AddSection({
+	Name = "Credits"
+})
+
+
+Credit:AddDropdown({
+	Name = "Credits",
+	Default = "d",
+	Options = {"Annon#7747: Owner/Creator", "Siris:  Orion UI library", "Taki/Dino: Support Team"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+----------------------------- Discord Server invites --------------------------------
+local Section = Credit:AddSection({
+	Name = "Annon Hub Discord Server"
+})
+
+Credit:AddParagraph("Join Discord Server","Discord: Join Annon Hub's official discord server")
+
+Credit:AddButton({
+	Name = "Join Annon Hub offical discord server",
+	Callback = function()
+		SendingInviteSunrise()
+		waitt()
+      	Sunrise()
+  	end    
+})
+local Section = Credit:AddSection({
+	Name = "Siris/Orion Discord Server"
+})
+
+Credit:AddParagraph("Join Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
+
+Credit:AddButton({
+	Name = "Join Siris Discord Server (Orion UI Library)",
+	Callback = function()
+		SendingInviteSiris()
+		waitt()
+      	SirisDiscordInvite()
+  	end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
