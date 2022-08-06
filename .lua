@@ -1395,17 +1395,20 @@ _G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJ
 
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
-	
+	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting .")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
-	
+	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting . .")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
-	
+	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting . . .")
 
+	waitt()
+_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "```User: "..Player.name.." \nGame: "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.." \nPlaceID: "..game.PlaceId.." \n \nLoading: . \nLoading: . . \nLoading: . . . \nSuccess: successfully Logged in```")
+function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-
+waitt()
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
@@ -1416,10 +1419,10 @@ local webhookcheck =
 local url =
    "https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v" -- put ur webhook here dumbos
 local data = {
-   ["content"] = "***"..Player.Name.."*** Has successfully logged into ***Annon Hub.***",
+   ["content"] = "",
    ["embeds"] = {
        {
-           ["title"] = "Currently Playing: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
+           ["title"] = "Currently Playing: " ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. "",
            ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
