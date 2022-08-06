@@ -839,9 +839,9 @@ if game.PlaceId == 92604236 then
 	})
 
 	------------------------------ Avatar Resizer ------------------------------
-	hsl:AddParagraph("High School Life","Avatar Resizer: Makes your avatar bigger.")
+	hsl:AddParagraph("High School Life","Avatar Resizer: Makes your avatar bigger. (MAY LAG FOR A COUPLE SECONDS)")
 	hsl:AddButton({
-		Name = "Avatar ReSizer (MAY LAG FOR A COUPLE SECONDS)",
+		Name = "Avatar ReSizer",
 		Callback = function()
 				  HighSchoolLifeReSizer()
 		  end    
