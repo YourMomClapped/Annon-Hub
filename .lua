@@ -1,7 +1,11 @@
+
+
 local Player = game.Players.LocalPlayer
-local sound
 local client = game.Players.LocalPlayer
 local char = client.Character
+local Sound
+local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://10492485314", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
 
@@ -546,12 +550,35 @@ end
 ██╔═══╝░██╔══██╗██║░░██║██╔══╝░░██║██║░░░░░██╔══╝░░
 ██║░░░░░██║░░██║╚█████╔╝██║░░░░░██║███████╗███████╗
 ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝╚══════╝]]
-waitt()
 local Profile = Window:MakeTab({
 	Name = "Profile",
 	Icon = "rbxassetid://9411304331",
 	PremiumOnly = false
 })
+
+
+
+
+
+
+
+waitt()
+------- Profile ----------
+local Section = Profile:AddSection({
+	Name = "Status"
+})
+
+Profile:AddParagraph("Username", "Username: "..Player.DisplayName.."")
+waitt()
+
+
+
+Profile:AddParagraph("Game", "Game: "..GetName.Name.."")
+
+-- game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+
+
 
 
 waitt()
@@ -840,9 +867,9 @@ if game.PlaceId == 92604236 then
 	})
 
 	------------------------------ Avatar Resizer ------------------------------
-	hsl:AddParagraph("High School Life","Avatar Resizer: Makes your avatar bigger. (MAY LAG FOR A COUPLE SECONDS)")
+	hsl:AddParagraph("High School Life","Avatar Re-Sizer: Makes your avatar bigger.")
 	hsl:AddButton({
-		Name = "Avatar ReSizer",
+		Name = "Avatar Re-Sizer",
 		Callback = function()
 				  HighSchoolLifeReSizer()
 		  end    
@@ -1481,7 +1508,7 @@ local Section = Credit:AddSection({
 	Name = "Annon Hub Discord Server"
 })
 
-Credit:AddParagraph("Join Discord Server","Discord: Join Annon Hub's official discord server")
+Credit:AddParagraph("Annon Hub Discord Server","Discord: Join Annon Hub's official discord server")
 
 Credit:AddButton({
 	Name = "Join Annon Hub offical discord server",
@@ -1495,7 +1522,7 @@ local Section = Credit:AddSection({
 	Name = "Siris/Orion Discord Server"
 })
 
-Credit:AddParagraph("Join Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
+Credit:AddParagraph("Siris/Orion Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
 
 Credit:AddButton({
 	Name = "Join Siris Discord Server (Orion UI Library)",
@@ -1591,11 +1618,10 @@ _G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJ
 
 
 
-function LoadGame()
-	repeat wait() until game:IsLoaded()
+
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
     waitt()
-	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "https://cdn.discordapp.com/attachments/998558647019913236/1005357754162090004/photo_62588edb73be46e64eb93606-1659737825622.png")
+	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "https://cdn.discordapp.com/attachments/1000753220508979320/1005665021696684063/photo_62588edb73be46e64eb93606-1659737825622.png")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting .")
@@ -1608,7 +1634,7 @@ function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}
 
 
 	waitt()
-_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "```User: "..Player.name.." \nGame: "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.." \nPlaceID: "..game.PlaceId.." \n \nLoading: . \nLoading: . . \nLoading: . . . \nSuccess: successfully Logged in```")
+_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "```User: "..Player.name.." \nGame: "..GetName.Name.." \nPlaceID: "..game.PlaceId.." \n \nLoading: . \nLoading: . . \nLoading: . . . \nSuccess: successfully Logged in```")
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
 waitt()
@@ -1625,8 +1651,8 @@ local data = {
    ["content"] = "",
    ["embeds"] = {
        {
-           ["title"] = "Currently Playing: " ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. "",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["title"] = "Currently Playing: " ..GetName.Name.. "",
+           ["description"] = "Username: " .. Player.Name.." with **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
@@ -1644,10 +1670,10 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
-end
 
 
-LoadGame()
+
+
 
 
 
