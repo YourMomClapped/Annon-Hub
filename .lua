@@ -1,10 +1,40 @@
 
-
+local Players = game:GetService("Players")
 local Player = game.Players.LocalPlayer
 local client = game.Players.LocalPlayer
 local char = client.Character
 local Sound
+
+--------------------------------- Waiting For Game to Load ---------------------------------
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+	OrionLib:MakeNotification({
+	Name = "LOADING . . .",
+	Content = "Waiting for game to load . . .",
+	Image = "rbxassetid://9411304331",
+	Time = 10
+	})
+	waitt()
+	OrionLib:MakeNotification({
+		Name = "LOADING . . .",
+		Content = "Depends on how good your connection speed is.",
+		Image = "rbxassetid://9411304331",
+		Time = 10
+		})
 local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid://10492485314", HidePremium = false, IntroText = "Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
@@ -16,7 +46,6 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid:
 	8485853064 -- W
 	4370299859
 	6723015609
-]]
 
 
 
@@ -24,7 +53,8 @@ local Window = OrionLib:MakeWindow({Name = "Annon Hub", IntroIcon = "rbxassetid:
 
 
 
---[[
+
+
 ███╗░░██╗░█████╗░████████╗██╗███████╗██╗░█████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗
 ████╗░██║██╔══██╗╚══██╔══╝██║██╔════╝██║██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
 ██╔██╗██║██║░░██║░░░██║░░░██║█████╗░░██║██║░░╚═╝███████║░░░██║░░░██║██║░░██║██╔██╗██║
@@ -568,16 +598,21 @@ local Section = Profile:AddSection({
 	Name = "Status"
 })
 
+
+------------------ Username ------------------
 Profile:AddParagraph("Username", "Username: "..Player.DisplayName.."")
 waitt()
 
 
-
+------------------ Game the player is in ------------------
 Profile:AddParagraph("Game", "Game: "..GetName.Name.."")
 
+waitt()
+
+------------------ Account Age ------------------
+Profile:AddParagraph("Account Age", "Account Age: Your Account Is "..Player.AccountAge.." Days Old")
+
 -- game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-
-
 
 
 
@@ -1621,7 +1656,7 @@ _G.SendWebHook("https://discord.com/api/webhooks/998558679790002276/-kgc-yS5MZoJ
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
     waitt()
-	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "https://cdn.discordapp.com/attachments/1000753220508979320/1005665021696684063/photo_62588edb73be46e64eb93606-1659737825622.png")
+	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "https://cdn.discordapp.com/attachments/998857437161476106/1005665510563782696/photo_62588edb73be46e64eb93606-1659737825622.png")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	waitt()
 	_G.SendWebHook("https://discord.com/api/webhooks/1001371210074042461/TnlW2ECFmM402HH_oLZT4Ux-tDhMjBnou48CjtR6oY72DNUFgBouRZAdrngqsQwR_z6v", "-- /// Injecting .")
