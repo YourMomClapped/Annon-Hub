@@ -7,17 +7,18 @@ local Sound
 
 --------------------------------- Waiting For Game to Load ---------------------------------
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Loading Annon Hub", IntroIcon = "rbxassetid://2869102474", HidePremium = false, IntroText = "Loading Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
+	local Window = OrionLib:MakeWindow({Name = "Waiting for game to load . . .", IntroIcon = "rbxassetid://2869102474", HidePremium = false, IntroText = "Loading Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
 
 
-	local Profile = Window:MakeTab({
+	local Loadingg = Window:MakeTab({
 		Name = "Loading",
 		Icon = "rbxassetid://2869102474",
 		PremiumOnly = false
 	})
 
-Profile:AddParagraph("Loading . . .", "Annon Hub is loading . . .")
-Profile:AddParagraph("Loading Time Depends On Your Connection Speeds", "")
+Loadingg:AddParagraph("Loading . . .", "Annon Hub is loading . . .")
+Loadingg:AddParagraph("Loading . . .", "The time *Annon Hub* will take loading depends on your internet connection")
+
 
 wait(.5)
 	OrionLib:MakeNotification({
@@ -38,18 +39,14 @@ wait(.5)
 
 
 
-local Profile = Window:MakeTab({
-	Name = "Loading Profile",
-	Icon = "rbxassetid://2869102474",
-	PremiumOnly = false
-})
 
 
 
 
 
 
-waitt()
+
+
 
 --[[
 ██╗      ██████╗  █████╗ ██████╗ ██╗███╗   ██╗ ██████╗     ██████╗ ██████╗  ██████╗ ███████╗██╗██╗     ███████╗
@@ -60,32 +57,36 @@ waitt()
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝
 ]]
 
-local Section = Profile:AddSection({
+local LoadingProfile = Window:MakeTab({
+	Name = "Loading Profile",
+	Icon = "rbxassetid://2869102474",
+	PremiumOnly = false
+})
+
+local Section = LoadingProfile:AddSection({
 	Name = "Profile"
 })
-Profile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
+LoadingProfile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
 
-waitt()
+
 
 ------ Information --------
-local Section = Profile:AddSection({
+local Section = LoadingProfile:AddSection({
 	Name = "Information"
 })
-waitt()
 
-Profile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
 
-waitt()
+LoadingProfile:AddParagraph("Information","Currently in Alpha, mostly messing around with the UI, not many people will have this script for now, mainly used by me.")
+
+
 ------------------------------ whats Annon Hub for
-local Section = Profile:AddSection({
+local Section = LoadingProfile:AddSection({
 	Name = "Whats Annon Hub for"
 })
 
-waitt()
---------- What its for --------
-Profile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
-waitt()
+--------- What its for --------
+LoadingProfile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub full of scripts/HUBS.")
 
 
 
@@ -97,24 +98,20 @@ waitt()
 ███████╗╚██████╔╝██║  ██║██████╔╝██║██║ ╚████║╚██████╔╝    ╚██████╗██║  ██║███████╗██████╔╝██║   ██║   ███████║
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝   ╚═╝   ╚══════╝
 ]]
-
 waitt()
-local Credit = Window:MakeTab({
-	Name = "Credits",
+local LoadingCredits = Window:MakeTab({
+	Name = "Loading Credits",
 	Icon = "rbxassetid://6961018885",
 	PremiumOnly = false
 })
 
-
-
-
 -------------------------- Credits --------------------------
-local Section = Credit:AddSection({
+local Section = LoadingCredits:AddSection({
 	Name = "Credits"
 })
 
 
-Credit:AddDropdown({
+LoadingCredits:AddDropdown({
 	Name = "Credits",
 	Default = "d",
 	Options = {"Annon#7747: Owner/Creator", "Siris:  Orion UI library", "Taki/Dino: Support Team"},
@@ -124,13 +121,13 @@ Credit:AddDropdown({
 })
 
 ----------------------------- Discord Server invites --------------------------------
-local Section = Credit:AddSection({
+local Section = LoadingCredits:AddSection({
 	Name = "Annon Hub Discord Server"
 })
 
-Credit:AddParagraph("Annon Hub Discord Server","Discord: Join Annon Hub's official discord server")
+LoadingCredits:AddParagraph("Annon Hub Discord Server","Discord: Join Annon Hub's official discord server")
 
-Credit:AddButton({
+LoadingCredits:AddButton({
 	Name = "Join Annon Hub offical discord server",
 	Callback = function()
 		SendingInviteSunrise()
@@ -138,13 +135,13 @@ Credit:AddButton({
       	Sunrise()
   	end    
 })
-local Section = Credit:AddSection({
+local Section = LoadingCredits:AddSection({
 	Name = "Siris/Orion Discord Server"
 })
 
-Credit:AddParagraph("Siris/Orion Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
+LoadingCredits:AddParagraph("Siris/Orion Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
 
-Credit:AddButton({
+LoadingCredits:AddButton({
 	Name = "Join Siris Discord Server (Orion UI Library)",
 	Callback = function()
 		SendingInviteSiris()
@@ -154,8 +151,8 @@ Credit:AddButton({
 })
 
 
-OrionLib:Init()
-OrionLib:Destroy()
+
+
 
 local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
