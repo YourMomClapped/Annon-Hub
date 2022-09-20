@@ -4,10 +4,29 @@ local Player = game.Players.LocalPlayer
 local client = game.Players.LocalPlayer
 local char = client.Character
 local Sound
+function waitt()
+	wait(.07)
+end
 
 --------------------------------- Waiting For Game to Load ---------------------------------
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 	local Window = OrionLib:MakeWindow({Name = "Waiting for game to load . . .", IntroIcon = "rbxassetid://2869102474", HidePremium = false, IntroText = "Loading Annon Hub", SaveConfig = false, ConfigFolder = "Annon Hub"})
+
+	OrionLib:MakeNotification({
+		Name = "LOADING . . .",
+		Content = "Waiting for game to load . . .",
+		Image = "rbxassetid://2869102474",
+		Time = 10
+		})
+		OrionLib:MakeNotification({
+			Name = "LOADING . . .",
+			Content = "Depends on how good your connection speed is.",
+			Image = "rbxassetid://2869102474",
+			Time = 10
+			})
+
+
+
 
 
 	local Loadingg = Window:MakeTab({
@@ -15,25 +34,14 @@ local Sound
 		Icon = "rbxassetid://2869102474",
 		PremiumOnly = false
 	})
-
+waitt()
 Loadingg:AddParagraph("Loading . . .", "Annon Hub is loading . . .")
+waitt()
 Loadingg:AddParagraph("Loading . . .", "The time *Annon Hub* will take loading depends on your internet connection")
+waitt()
 
 
-wait(.5)
-	OrionLib:MakeNotification({
-	Name = "LOADING . . .",
-	Content = "Waiting for game to load . . .",
-	Image = "rbxassetid://2869102474",
-	Time = 10
-	})
-	wait(.6)
-	OrionLib:MakeNotification({
-		Name = "LOADING . . .",
-		Content = "Depends on how good your connection speed is.",
-		Image = "rbxassetid://2869102474",
-		Time = 10
-		})
+	
 
 
 
@@ -66,6 +74,7 @@ local LoadingProfile = Window:MakeTab({
 local Section = LoadingProfile:AddSection({
 	Name = "Profile"
 })
+
 LoadingProfile:AddParagraph("Profile","Annon Hub is the best hub ofc ;) made by Annon#7747 UwW.")
 
 
@@ -98,20 +107,20 @@ LoadingProfile:AddParagraph("What's Annon Hub for?","Annon Hub is a script hub f
 ███████╗╚██████╔╝██║  ██║██████╔╝██║██║ ╚████║╚██████╔╝    ╚██████╗██║  ██║███████╗██████╔╝██║   ██║   ███████║
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝   ╚═╝   ╚══════╝
 ]]
+
 waitt()
-local LoadingCredits = Window:MakeTab({
+local LoadingCredit = Window:MakeTab({
 	Name = "Loading Credits",
 	Icon = "rbxassetid://6961018885",
 	PremiumOnly = false
 })
 
--------------------------- Credits --------------------------
-local Section = LoadingCredits:AddSection({
+local Section = LoadingCredit:AddSection({
 	Name = "Credits"
 })
 
 
-LoadingCredits:AddDropdown({
+LoadingCredit:AddDropdown({
 	Name = "Credits",
 	Default = "d",
 	Options = {"Annon#7747: Owner/Creator", "Siris:  Orion UI library", "Taki/Dino: Support Team"},
@@ -121,13 +130,13 @@ LoadingCredits:AddDropdown({
 })
 
 ----------------------------- Discord Server invites --------------------------------
-local Section = LoadingCredits:AddSection({
+local Section = LoadingCredit:AddSection({
 	Name = "Annon Hub Discord Server"
 })
 
-LoadingCredits:AddParagraph("Annon Hub Discord Server","Discord: Join Annon Hub's official discord server")
+LoadingCredit:AddParagraph("Annon Hub Discord Server","Discord: Join Annon Hub's official discord server")
 
-LoadingCredits:AddButton({
+LoadingCredit:AddButton({
 	Name = "Join Annon Hub offical discord server",
 	Callback = function()
 		SendingInviteSunrise()
@@ -135,13 +144,13 @@ LoadingCredits:AddButton({
       	Sunrise()
   	end    
 })
-local Section = LoadingCredits:AddSection({
+local Section = LoadingCredit:AddSection({
 	Name = "Siris/Orion Discord Server"
 })
 
-LoadingCredits:AddParagraph("Siris/Orion Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
+LoadingCredit:AddParagraph("Siris/Orion Discord Server","Discord: Join Siris/Orion's offical discord server | UI library used")
 
-LoadingCredits:AddButton({
+LoadingCredit:AddButton({
 	Name = "Join Siris Discord Server (Orion UI Library)",
 	Callback = function()
 		SendingInviteSiris()
@@ -149,9 +158,6 @@ LoadingCredits:AddButton({
       	SirisDiscordInvite()
   	end    
 })
-
-
-
 
 
 local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
@@ -717,9 +723,7 @@ end
 
 
 ------------------- LOADING TABS --------------------------
-function waitt()
-	wait(0.07)
-end
+
 
 
 
@@ -767,7 +771,7 @@ Profile:AddParagraph("Game", "Game: "..GetName.Name.."")
 waitt()
 
 ------------------ Account Age ------------------
-Profile:AddParagraph("Account Age", "Account Age: Your Account Is "..Player.AccountAge.." Days Old")
+Profile:AddParagraph("Account Age", "Account Age: Account Age Is "..Player.AccountAge.." Days Old")
 
 -- game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
@@ -1075,7 +1079,7 @@ if game.PlaceId == 92604236 then
 	local Section = hsl:AddSection({
 		Name = "Auto Give Combat"
 	})
-	hsl:AddParagraph("High School Life","Kill: Used with Cmd X to use the kill command.")
+	hsl:AddParagraph("High School Life","How To Use: Used with Cmd X to use the kill command.")
 	hsl:AddParagraph("High School Life","Info: After injecting Reset, then use ;kill 'Players username' its very buuggy you need to change your avatar height for stupid ass slenders(If it doesnt work)")
 
 	------------------------------ For Kill Command ------------------------------
@@ -1083,10 +1087,11 @@ if game.PlaceId == 92604236 then
 		Name = "Auto Give Combat (Killing people with CmdX)",
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-			game.Players.LocalPlayer.CharacterAdded:Connect(function() 
+			waitt()
+            game.Players.LocalPlayer.CharacterAdded:Connect(function() 
 				game:GetService("ReplicatedStorage").GiveToolReceiveTool.EquipUnequipTool:InvokeServer("Combat Tool",false)
-			game:GetService("ReplicatedStorage").GiveToolReceiveTool.EquipUnequipTool:InvokeServer("Combat Tool",true)
-			end)			
+				game:GetService("ReplicatedStorage").GiveToolReceiveTool.EquipUnequipTool:InvokeServer("Combat Tool",true)
+			end)	
 		  end    
 	})
 end
@@ -1360,6 +1365,9 @@ HUB:AddDropdown({
 
 
 
+
+
+
 --[[
 ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
 ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
@@ -1528,6 +1536,9 @@ Scripts:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
   	end    
 })
+
+
+
 
 
 
@@ -1997,4 +2008,4 @@ end
 
 
 OrionLib:Init()
-OrionLib:Destroy()
+
